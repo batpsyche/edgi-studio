@@ -1,0 +1,136 @@
+Uri: https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+File Name: C:\Downloaded Web Sites\homesociete.ca\ajax\libs\jquery\3.3.1\jquery.min.js
+Content Type: text/javascript
+
+Uri: https://connect.facebook.net/en_US/fbevents.js
+File Name: C:\Downloaded Web Sites\homesociete.ca\en_US\fbevents.js
+Content Type: application/x-javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/354305678/?random=1706355048378&cv=11&fst=1706355048378&bg=ffffff&guid=ON&async=1&gtm=45He41o0v810745405&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2F&hn=www.googleadservices.com&frm=0&tiba=Home Société&pscdl=noapi&auid=1135375405.1706354404&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\354305678\f-4.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/354305678/?random=1706355062564&cv=11&fst=1706355062564&bg=ffffff&guid=ON&async=1&gtm=45He41o0v810745405&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fcareer%2F&hn=www.googleadservices.com&frm=0&tiba=Career %26 Job Opportunities | Home Société&pscdl=noapi&auid=1135375405.1706354404&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\354305678\f-5.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/354305678/?random=1706355102396&cv=11&fst=1706355102396&bg=ffffff&guid=ON&async=1&gtm=45He41o0v810745405&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fterms-of-use%2F&hn=www.googleadservices.com&frm=0&tiba=Terms of Use | Home Société&pscdl=noapi&auid=1135375405.1706354404&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\354305678\f-6.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/354305678/?random=1706355131477&cv=11&fst=1706355131477&bg=ffffff&guid=ON&async=1&gtm=45He41o0v810745405&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fprivacy-policy%2F&hn=www.googleadservices.com&frm=0&tiba=Privacy Policy | Home Société&pscdl=noapi&auid=1135375405.1706354404&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\354305678\f-7.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/755402550/?random=1706355048324&cv=11&fst=1706355048324&bg=ffffff&guid=ON&async=1&gtm=45be41o0&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2F&hn=www.googleadservices.com&frm=0&tiba=Home Société&pscdl=noapi&auid=1135375405.1706354404&data=event%3Dgtag.config&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\755402550\f-4.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/755402550/?random=1706355062507&cv=11&fst=1706355062507&bg=ffffff&guid=ON&async=1&gtm=45be41o0&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fcareer%2F&hn=www.googleadservices.com&frm=0&tiba=Career %26 Job Opportunities | Home Société&pscdl=noapi&auid=1135375405.1706354404&data=event%3Dgtag.config&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\755402550\f-5.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/755402550/?random=1706355102326&cv=11&fst=1706355102326&bg=ffffff&guid=ON&async=1&gtm=45be41o0&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fterms-of-use%2F&hn=www.googleadservices.com&frm=0&tiba=Terms of Use | Home Société&pscdl=noapi&auid=1135375405.1706354404&data=event%3Dgtag.config&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\755402550\f-6.txt
+Content Type: text/javascript
+
+Uri: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/755402550/?random=1706355131383&cv=11&fst=1706355131383&bg=ffffff&guid=ON&async=1&gtm=45be41o0&gcd=11l1l1l1l1&dma=0&u_w=1600&u_h=900&url=https:%2F%2Fhomesociete.ca%2Fen%2Fprivacy-policy%2F&hn=www.googleadservices.com&frm=0&tiba=Privacy Policy | Home Société&pscdl=noapi&auid=1135375405.1706354404&data=event%3Dgtag.config&rfmt=3&fmt=4
+File Name: C:\Downloaded Web Sites\homesociete.ca\pagead\viewthroughconversion\755402550\f-7.txt
+Content Type: text/javascript
+
+Uri: https://homesociete.ca/en/
+File Name: C:\Downloaded Web Sites\homesociete.ca\en\index.htm
+Content Type: text/html
+
+Uri: https://homesociete.ca/en/career/
+File Name: C:\Downloaded Web Sites\homesociete.ca\en\career\index.htm
+Content Type: text/html
+
+Uri: https://homesociete.ca/en/privacy-policy/
+File Name: C:\Downloaded Web Sites\homesociete.ca\en\privacy-policy\index.htm
+Content Type: text/html
+
+Uri: https://homesociete.ca/en/terms-of-use/
+File Name: C:\Downloaded Web Sites\homesociete.ca\en\terms-of-use\index.htm
+Content Type: text/html
+
+Uri: https://homesociete.ca/themes/homesociete/dist/images/favicons/apple-touch-icon.png
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\images\favicons\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://homesociete.ca/themes/homesociete/dist/images/favicons/favicon.png
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\images\favicons\favicon.png
+Content Type: image/png
+
+Uri: https://homesociete.ca/themes/homesociete/dist/images/favicons/safari-pinned-tab.svg
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\images\favicons\safari-pinned-tab.svg
+Content Type: image/svg+xml
+
+Uri: https://homesociete.ca/themes/homesociete/dist/scripts/app.js?ver=202106230936
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\scripts\app.js
+Content Type: application/x-javascript
+
+Uri: https://homesociete.ca/themes/homesociete/dist/scripts/vendors.js?ver=202106230936
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\scripts\vendors.js
+Content Type: application/x-javascript
+
+Uri: https://homesociete.ca/themes/homesociete/dist/styles/main.css?ver=202106230936
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\dist\styles\main.css
+Content Type: text/css
+
+Uri: https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_1_small.jpg
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\resources\assets\images\static\carousel\slider_1_small.jpg
+Content Type: image/jpeg
+
+Uri: https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_2_small.jpg
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\resources\assets\images\static\carousel\slider_2_small.jpg
+Content Type: image/jpeg
+
+Uri: https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_3_small.jpg
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\resources\assets\images\static\carousel\slider_3_small.jpg
+Content Type: image/jpeg
+
+Uri: https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_4_small.jpg
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\resources\assets\images\static\carousel\slider_4_small.jpg
+Content Type: image/jpeg
+
+Uri: https://homesociete.ca/themes/homesociete/resources/site.webmanifest.json
+File Name: C:\Downloaded Web Sites\homesociete.ca\themes\homesociete\resources\site.webmanifest.json
+Content Type: application/json
+
+Uri: https://homesociete.ca/wordpress/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2
+File Name: C:\Downloaded Web Sites\homesociete.ca\wordpress\wp-includes\css\dist\block-library\style.min.css
+Content Type: text/css
+
+Uri: https://script.hotjar.com/modules.0c2aac1b2d1ba79f2a01.js
+File Name: C:\Downloaded Web Sites\homesociete.ca\modules.0c2aac1b2d1ba79f2a01.js
+Content Type: application/javascript
+
+Uri: https://static.hotjar.com/c/hotjar-2078336.js?sv=7
+File Name: C:\Downloaded Web Sites\homesociete.ca\c\hotjar-2078336.js
+Content Type: application/javascript
+
+Uri: https://www.google-analytics.com/analytics.js
+File Name: C:\Downloaded Web Sites\homesociete.ca\analytics.js
+Content Type: text/javascript
+
+Uri: https://www.google.com/recaptcha/api.js?render=explicit&hl=en
+File Name: C:\Downloaded Web Sites\homesociete.ca\recaptcha\api.js
+Content Type: text/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=AW-755402550
+File Name: C:\Downloaded Web Sites\homesociete.ca\gtag\js-1
+Content Type: application/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=G-4T8D24C1X4&l=dataLayer&cx=c
+File Name: C:\Downloaded Web Sites\homesociete.ca\gtag\js
+Content Type: application/javascript
+
+Uri: https://www.googletagmanager.com/gtm.js?id=GTM-WS7XQ6T
+File Name: C:\Downloaded Web Sites\homesociete.ca\gtm.js
+Content Type: application/javascript
+
+Uri: https://www.gstatic.com/recaptcha/releases/QUpyTKFkX5CIV6EF8TFSWEif/recaptcha__en.js
+File Name: C:\Downloaded Web Sites\homesociete.ca\recaptcha\releases\QUpyTKFkX5CIV6EF8TFSWEif\recaptcha__en.js
+Content Type: text/javascript
+

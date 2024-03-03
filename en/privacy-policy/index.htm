@@ -1,0 +1,3424 @@
+﻿<!DOCTYPE html>
+<html
+  data-template="template-privacy-policy-blade"
+  class="has-no-js"
+  lang="en-CA"
+>
+  <head>
+    <script type="text/javascript">
+      if (!gform) {
+        document.addEventListener("gform_main_scripts_loaded", function () {
+          gform.scriptsLoaded = !0;
+        }),
+          window.addEventListener("DOMContentLoaded", function () {
+            gform.domLoaded = !0;
+          });
+        var gform = {
+          domLoaded: !1,
+          scriptsLoaded: !1,
+          initializeOnLoaded: function (o) {
+            gform.domLoaded && gform.scriptsLoaded
+              ? o()
+              : !gform.domLoaded && gform.scriptsLoaded
+              ? window.addEventListener("DOMContentLoaded", o)
+              : document.addEventListener("gform_main_scripts_loaded", o);
+          },
+          hooks: { action: {}, filter: {} },
+          addAction: function (o, n, r, t) {
+            gform.addHook("action", o, n, r, t);
+          },
+          addFilter: function (o, n, r, t) {
+            gform.addHook("filter", o, n, r, t);
+          },
+          doAction: function (o) {
+            gform.doHook("action", o, arguments);
+          },
+          applyFilters: function (o) {
+            return gform.doHook("filter", o, arguments);
+          },
+          removeAction: function (o, n) {
+            gform.removeHook("action", o, n);
+          },
+          removeFilter: function (o, n, r) {
+            gform.removeHook("filter", o, n, r);
+          },
+          addHook: function (o, n, r, t, i) {
+            null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+            var e = gform.hooks[o][n];
+            null == i && (i = n + "_" + e.length),
+              null == t && (t = 10),
+              gform.hooks[o][n].push({ tag: i, callable: r, priority: t });
+          },
+          doHook: function (o, n, r) {
+            if (
+              ((r = Array.prototype.slice.call(r, 1)),
+              null != gform.hooks[o][n])
+            ) {
+              var t,
+                i = gform.hooks[o][n];
+              i.sort(function (o, n) {
+                return o.priority - n.priority;
+              });
+              for (var e = 0; e < i.length; e++)
+                "function" != typeof (t = i[e].callable) && (t = window[t]),
+                  "action" == o ? t.apply(null, r) : (r[0] = t.apply(null, r));
+            }
+            if ("filter" == o) return r[0];
+          },
+          removeHook: function (o, n, r, t) {
+            if (null != gform.hooks[o][n])
+              for (var i = gform.hooks[o][n], e = i.length - 1; 0 <= e; e--)
+                (null != t && t != i[e].tag) ||
+                  (null != r && r != i[e].priority) ||
+                  i.splice(e, 1);
+          },
+        };
+      }
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
+    />
+    <!-- Global site tag (gtag.js) - Google Ads: 755402550 -->
+    <script async="" src="../../gtag/js-1?id=AW-755402550"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-755402550");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WS7XQ6T");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <title>Privacy Policy | Home Société</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="alternate" href="index.htm" hreflang="en" />
+    <link
+      rel="alternate"
+      href="https://homesociete.ca/fr/politique-de-confidentialite/"
+      hreflang="fr"
+    />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="../../themes/homesociete/dist/images/favicons/favicon.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../themes/homesociete/dist/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="mask-icon"
+      href="../../themes/homesociete/dist/images/favicons/safari-pinned-tab.svg"
+      color="#E57920"
+    />
+
+    <meta
+      name="msapplication-config"
+      content="https://homesociete.ca/themes/homesociete/resources/browserconfig.xml"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+
+    <link
+      rel="manifest"
+      href="../../themes/homesociete/resources/site.webmanifest.json"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <meta
+      name="description"
+      content="Welcome to the G2MC Websites and e-commerce Services. We are delighted that you have chosen to shop with us. G2MC (the company that owns the website you are&#8230;"
+    />
+    <meta
+      property="og:image"
+      content="https://homesociete.ca/uploads/2019/03/opengraph.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Privacy Policy" />
+    <meta
+      property="og:description"
+      content="Welcome to the G2MC Websites and e-commerce Services. We are delighted that you have chosen to shop with us. G2MC (the company that owns the website you are visiting) takes your privacy and security&#8230;"
+    />
+    <meta
+      property="og:url"
+      content="https://homesociete.ca/en/privacy-policy/"
+    />
+    <meta property="og:site_name" content="Home Société" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Privacy Policy" />
+    <meta
+      name="twitter:description"
+      content="Welcome to the G2MC Websites and e-commerce Services. We are delighted that you have chosen to shop with us. G2MC (the company that owns the website you are visiting) takes your privacy and security&#8230;"
+    />
+    <meta
+      name="twitter:image"
+      content="https://homesociete.ca/uploads/2019/03/opengraph.png"
+    />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <link rel="canonical" href="index.htm" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://homesociete.ca/en/",
+        "name": "Home Soci\u00e9t\u00e9"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://homesociete.ca/en/",
+              "name": "Home Soci\u00e9t\u00e9"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://homesociete.ca/en/privacy-policy/",
+              "name": "Privacy Policy"
+            }
+          }
+        ]
+      }
+    </script>
+    <meta
+      name="google-site-verification"
+      content="vsXUj8hyEx4sI3bwpu_WlylZH4l1SXOZY_2zvNj8Y0s"
+    />
+
+    <link rel="dns-prefetch" href="//www.google.com" />
+    <link rel="dns-prefetch" href="//code.jquery.com" />
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="../../wordpress/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="sage/main.css-css"
+      href="../../themes/homesociete/dist/styles/main.css?ver=202106230936"
+      type="text/css"
+      media="all"
+    />
+    <script
+      async=""
+      defer=""
+      type="text/javascript"
+      src="../../recaptcha/api.js?render=explicit&#038;hl=en"
+      id="google-recaptcha-js"
+    ></script>
+    <script type="text/javascript">
+      var ajaxurl = "https://homesociete.ca/wordpress/wp-admin/admin-ajax.php";
+    </script>
+  </head>
+  <body
+    class="privacy-policy page-template template-privacy-policy page page-id-3 app-data index-data singular-data page-data page-3-data page-privacy-policy-data template-privacy-policy-data"
+  >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WS7XQ6T"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1228336204011449");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=1228336204011449&ev=PageView
+        &noscript=1"
+      />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Start Quantcast Tag -->
+    <script type="text/javascript">
+      var _qevents = _qevents || [];
+
+      (function () {
+        var elem = document.createElement("script");
+        elem.src =
+          (document.location.protocol == "https:"
+            ? "https://urldefense.proofpoint.com/v2/url?u=https-3A__secure&d=DwIGAg&c=Ftw_YSVcGmqQBvrGwAZugGylNRkk-uER0-5bY94tjsc&r=C0gsZeiP-6wK2Jb9l49x83_Hu-hYF0br5wSNJiq2JFU&m=i7ay-s-VCkHIx6W_-o9XB_8u-YfHkXUjyMwu3RxaYJY&s=zkUXSJx9Ob3nLx2rGaeGs2fG7zldyw90ZPSl0d_qfQI&e="
+            : "https://urldefense.proofpoint.com/v2/url?u=http-3A__edge&d=DwIGAg&c=Ftw_YSVcGmqQBvrGwAZugGylNRkk-uER0-5bY94tjsc&r=C0gsZeiP-6wK2Jb9l49x83_Hu-hYF0br5wSNJiq2JFU&m=i7ay-s-VCkHIx6W_-o9XB_8u-YfHkXUjyMwu3RxaYJY&s=E4HOFoBJnJ8VrToc9Okv_ND6SZw1zmh2d2gAIrGu57E&e=") +
+          ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName("script")[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+      })();
+      _qevents.push({ qacct: "p-7Xj1yJDCw1_Y5" });
+    </script>
+    <!-- End Quantcast tag -->
+
+    <div class="c-preloader">
+      <div class="c-preloader_anim" data-module="Preloader"></div>
+      <div class="c-preloader_background"></div>
+      <div class="c-preloader_logo">
+        <svg aria-hidden="true" role="img">
+          <use
+            href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+            xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+          ></use>
+        </svg>
+      </div>
+    </div>
+
+    <div class="c-popup" data-module="Popup">
+      <div class="c-popup_background js-close"></div>
+      <div class="c-popup_inner">
+        <button class="c-popup_close o-link js-close" type="button">
+          Close
+        </button>
+        <article class="c-popup_content js-content"></article>
+      </div>
+    </div>
+    <div id="js-pjax-wrapper">
+      <div
+        class="js-pjax-container"
+        data-template="template-privacy-policy-blade"
+      >
+        <header class="c-header -sticky js-header">
+          <ul class="c-header_menu">
+            <li class="c-header_menu_item">
+              <a
+                href="../index.htm#about"
+                class=""
+                data-offset="60"
+                data-module="Event"
+                data-event-action="click"
+                data-event-category="Menu"
+                data-event-label="https://homesociete.ca/en#about"
+                >About</a
+              >
+            </li>
+            <li class="c-header_menu_item">
+              <a
+                href="../index.htm#brands"
+                class=""
+                data-offset="60"
+                data-module="Event"
+                data-event-action="click"
+                data-event-category="Menu"
+                data-event-label="https://homesociete.ca/en#brands"
+                >Brands</a
+              >
+            </li>
+            <li class="c-header_menu_item">
+              <a
+                href="../index.htm#contact"
+                class=""
+                data-offset="60"
+                data-module="Event"
+                data-event-action="click"
+                data-event-category="Menu"
+                data-event-label="https://homesociete.ca/en#contact"
+                >Contact</a
+              >
+            </li>
+            <li class="c-header_menu_item">
+              <a
+                href="../career/index.htm"
+                class=""
+                data-offset="60"
+                data-module="Event"
+                data-event-action="click"
+                data-event-category="Menu"
+                data-event-label="https://homesociete.ca/en/career/"
+                >Career</a
+              >
+            </li>
+
+            <li class="c-header_menu_item">
+              <a
+                href="https://homesociete.ca/fr/politique-de-confidentialite/"
+                data-module="Event"
+                data-event-action="click"
+                data-event-category="Menu"
+                data-event-label="langswitcher - https://homesociete.ca/fr/politique-de-confidentialite/"
+                class="no-transition"
+                data-offset="60"
+                ><abbr title="Français">FR</abbr></a
+              >
+            </li>
+          </ul>
+          <a href="../index.htm" class="c-header_logo">
+            <span class="u-screen-reader-text">Home Société</span>
+            <svg aria-hidden="true" role="img">
+              <use
+                href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+                xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+              ></use>
+            </svg>
+          </a>
+          <button
+            class="c-header_burger u-none@from-small"
+            type="button"
+            data-module="NavButton"
+          ></button>
+        </header>
+
+        <div class="o-scroll" data-horizontal="" data-module="Scroll">
+          <!-- Promo -->
+          <div class="o-scroll_section">
+            <div class="c-promo -empty" style="background-image: url('')"></div>
+          </div>
+
+          <!-- Menu -->
+          <div class="o-scroll_section c-header_wrapper">
+            <span
+              class="c-header_trigger js-animate"
+              data-callback="trigger.Header()"
+              data-repeat=""
+            ></span>
+            <header class="c-header js-header">
+              <ul class="c-header_menu">
+                <li class="c-header_menu_item">
+                  <a
+                    href="../index.htm#about"
+                    class=""
+                    data-offset="60"
+                    data-module="Event"
+                    data-event-action="click"
+                    data-event-category="Menu"
+                    data-event-label="https://homesociete.ca/en#about"
+                    >About</a
+                  >
+                </li>
+                <li class="c-header_menu_item">
+                  <a
+                    href="../index.htm#brands"
+                    class=""
+                    data-offset="60"
+                    data-module="Event"
+                    data-event-action="click"
+                    data-event-category="Menu"
+                    data-event-label="https://homesociete.ca/en#brands"
+                    >Brands</a
+                  >
+                </li>
+                <li class="c-header_menu_item">
+                  <a
+                    href="../index.htm#contact"
+                    class=""
+                    data-offset="60"
+                    data-module="Event"
+                    data-event-action="click"
+                    data-event-category="Menu"
+                    data-event-label="https://homesociete.ca/en#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="c-header_menu_item">
+                  <a
+                    href="../career/index.htm"
+                    class=""
+                    data-offset="60"
+                    data-module="Event"
+                    data-event-action="click"
+                    data-event-category="Menu"
+                    data-event-label="https://homesociete.ca/en/career/"
+                    >Career</a
+                  >
+                </li>
+
+                <li class="c-header_menu_item">
+                  <a
+                    href="https://homesociete.ca/fr/politique-de-confidentialite/"
+                    data-module="Event"
+                    data-event-action="click"
+                    data-event-category="Menu"
+                    data-event-label="langswitcher - https://homesociete.ca/fr/politique-de-confidentialite/"
+                    class="no-transition"
+                    data-offset="60"
+                    ><abbr title="Français">FR</abbr></a
+                  >
+                </li>
+              </ul>
+              <a href="../index.htm" class="c-header_logo">
+                <span class="u-screen-reader-text">Home Société</span>
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo-small"
+                  ></use>
+                </svg>
+              </a>
+              <button
+                class="c-header_burger u-none@from-small"
+                type="button"
+                data-module="NavButton"
+              ></button>
+            </header>
+          </div>
+
+          <!-- Intro -->
+          <div class="o-scroll_section">
+            <section class="c-home-intro">
+              <div class="c-home-intro_summary js-animate u-text">
+                <p>
+                  As creators of design spaces, we want to inspire our customers
+                  and assist them in finding their comfort and personal style.
+                  We believe that furniture is made for self-expression.
+                </p>
+                <a
+                  href="#newsletter"
+                  data-module="Event"
+                  data-event-action="click"
+                  data-event-category="Newsletter"
+                  data-event-label="Home intro, scroll to newsletter form"
+                  class="o-link no-transition js-scrollto"
+                  data-offset="60"
+                  >Subscribe to our Newsletter</a
+                >
+                <button
+                  type="button"
+                  class="o-link"
+                  data-module="Page, Event"
+                  data-url="https://homesociete.ca/en/covid/"
+                  data-title="COVID-19 Memo"
+                  data-event-action="click"
+                  data-event-category="Opening popup"
+                  data-event-label="Covid Memo"
+                >
+                  Sanitary measures put in place
+                  <div class="is-hidden js-content">
+                    <div class="c-popup_content_inner">
+                      <header class="c-popup_header">
+                        <h1 class="c-popup_title">
+                          Sanitary measures put in place
+                        </h1>
+                      </header>
+                      <div class="c-popup_main o-wysiwyg">
+                        <p>
+                          <i
+                            ><span style="font-weight: 400"
+                              >Updated: March 19, 2021</span
+                            ></i
+                          >
+                        </p>
+                        <p>
+                          <span style="font-weight: 400">Dear clients,</span>
+                        </p>
+                        <p>
+                          <b
+                            >Our store is currently open Monday to Friday, from
+                            10 a.m. to 6 p.m., and Saturday to Sunday, from 10
+                            a.m. to 5 p.m. We nonetheless recommend scheduling a
+                            private appointment. </b
+                          >
+                        </p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >As always, we want to continue to inspire you,
+                            fulfill your dreams and help you create an
+                            environment that perfectly suits you. If you are in
+                            need of advice or want an update on your order, our
+                            team is here for you. We invite you to reach us by
+                            phone at </span
+                          ><a
+                            href="https://www.google.com/search?q=home+societe+toronto&client=safari&sxsrf=ALeKk03Zwg8aWpwndO9I23lEIOlJRBAdUA%3A1616089978665&ei=epNTYLz5J5GOggez3qewDA&oq=home+societe+toronto&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEMcBEK8BMgUIABDLATIGCAAQFhAeOg0IABDHARCjAhCwAxBDOg0IABDHARCvARCwAxBDOgcIABCwAxBDOgoIABDHARCvARAKOgYIABAKEEM6AggAUMcgWKMrYM0taAFwAngAgAGOAYgBqAeSAQM0LjWYAQCgAQGqAQdnd3Mtd2l6yAEKwAEB&sclient=gws-wiz&ved=0ahUKEwi8numotLrvAhURh-AKHTPvCcYQ4dUDCAw&uact=5#"
+                            ><span style="font-weight: 400"
+                              >(647) 696-4612</span
+                            ></a
+                          ><span style="font-weight: 400"> or by email at </span
+                          ><a
+                            href="/cdn-cgi/l/email-protection#b1d8dfd7def1d9dedcd4c2ded2d8d4c5d49fd2d0"
+                            ><span style="font-weight: 400"
+                              ><span
+                                class="__cf_email__"
+                                data-cfemail="355c5b535a755d5a5850465a565c5041501b5654"
+                                >[email&#160;protected]</span
+                              ></span
+                            ></a
+                          ><span style="font-weight: 400">. </span>
+                        </p>
+                        <p><b>Store</b></p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >We have put additional sanitation and preventative
+                            measures in place in our store to ensure the
+                            well-being and safety of everyone.</span
+                          >
+                        </p>
+                        <ul>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >We perform a daily health screening of all our
+                              employees;</span
+                            >
+                          </li>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >All advisors and employees in-store wear face
+                              coverings;</span
+                            >
+                          </li>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >We are currently limiting the number of customers
+                              allowed inside our store, according to the
+                              mandated capacity limits. To avoid a wait, we
+                              encourage you to schedule an appointment;</span
+                            >
+                          </li>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >We have increased the frequency of cleaning of
+                              our stores, including work areas and payment
+                              terminals, which are cleaned before and after each
+                              use;</span
+                            >
+                          </li>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >Containers of hand sanitizer are available to our
+                              customers and employees;</span
+                            >
+                          </li>
+                          <li style="font-weight: 400" aria-level="1">
+                            <span style="font-weight: 400"
+                              >We offer the option of sending all invoices and
+                              quotes by email in order to limit
+                              interactions.</span
+                            >
+                          </li>
+                        </ul>
+                        <p>
+                          <span style="font-weight: 400"
+                            >All customers must wear face coverings when
+                            visiting our store. We kindly ask you to stay home
+                            if you are experiencing any symptoms of COVID-19,
+                            have been diagnosed, or have been in contact with
+                            someone who has the virus. We encourage you to pay
+                            with a debit or credit card when possible.</span
+                          >
+                        </p>
+                        <p><b>Delivery</b></p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >All of our delivery services, including our
+                            white-glove service, which includes assembly and
+                            installation, are still available with additional
+                            steps implemented to ensure strict sanitary
+                            conditions.</span
+                          >
+                        </p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >We have implemented measures to ensure the safety
+                            of our warehouse and delivery staff, as well as our
+                            customers. They consist, among other things, of a
+                            daily health check, increased hygiene protocol,
+                            reduced operating hours, and a contactless delivery
+                            procedure. Please note that the application of these
+                            measures could cause exceptional delays for our
+                            delivery service.</span
+                          >
+                        </p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >We kindly ask that you maintain a distance of at
+                            least two metres from our staff at all times, and
+                            that you have your own pen on hand to sign the
+                            delivery slip.</span
+                          >
+                        </p>
+                        <p><b>Pickup</b></p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >Pickup is available at the Home Société store in
+                            Toronto. For opening hours, please refer to the
+                            store schedule.</span
+                          >
+                        </p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >Additional sanitary measures have been put in place
+                            to provide a safe working and shopping environment,
+                            such as increasing the frequency of cleaning and
+                            disinfection of door handles, as well as the
+                            addition of several containers of hand sanitizer,
+                            available to our customers and employees. Full
+                            payment for every order will be required when
+                            customers are contacted by phone.</span
+                          >
+                        </p>
+                        <p><b>Returns &amp; Exchanges</b></p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >Return requests can be made up to two weeks
+                            following the reopening of our stores. For all other
+                            requests, please contact our customer service
+                            department.</span
+                          >
+                        </p>
+                        <p><b>Customer Service</b></p>
+                        <p>
+                          <span style="font-weight: 400"
+                            >We remain available to answer any questions you may
+                            have. You can reach us by phone during opening
+                            hours, or by email any time. We are doing our utmost
+                            to answer your questions and provide order updates
+                            as quickly as possible.</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="c-home-intro_lines">
+                <div
+                  class="c-home-intro_lines_item c-home-intro_lines_split js-animate"
+                  data-speed="1.5"
+                  data-position="top"
+                  data-module="SplittedText"
+                  data-delay="0.05"
+                  data-horizontal=""
+                >
+                  I am
+                </div>
+                <div class="c-home-intro_lines_item">
+                  <div class="c-home-intro_logo_wrapper js-animate">
+                    <figure
+                      class="c-home-intro_logo js-animate"
+                      data-speed="1.5"
+                      data-position="top"
+                      data-delay="0.03"
+                    >
+                      <svg aria-hidden="true" role="img">
+                        <use
+                          href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                          xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                        ></use>
+                      </svg>
+                    </figure>
+                  </div>
+                  <span
+                    class="c-home-intro_lines_split"
+                    data-module="SplittedText"
+                    data-horizontal=""
+                    >many</span
+                  >
+                </div>
+                <div
+                  class="c-home-intro_lines_item c-home-intro_lines_split js-animate"
+                  data-speed="3"
+                  data-position="top"
+                  data-module="SplittedText"
+                  data-delay="0.07"
+                  data-horizontal=""
+                >
+                  things
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Slider -->
+          <div class="o-scroll_section -under">
+            <div class="c-slider" data-module="Slider">
+              <div
+                class="c-slider_background js-slider js-animate"
+                data-speed="-1"
+              >
+                <div class="c-slider_background_item js-slider-item is-active">
+                  <div
+                    class="c-slider_background_item_inner o-image_wrapper js-animate"
+                  >
+                    <!-- 1080px * 1080px -->
+                    <figure class="o-image">
+                      <div
+                        class="c-slider_background_item_image js-lazy-background"
+                        data-style="background-image:url(https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_1_big.jpg)"
+                      ></div>
+                    </figure>
+                  </div>
+                </div>
+                <div class="c-slider_background_item js-slider-item">
+                  <div
+                    class="c-slider_background_item_inner o-image_wrapper js-animate"
+                  >
+                    <!-- 1080px * 1080px -->
+                    <figure class="o-image">
+                      <div
+                        class="c-slider_background_item_image js-lazy-background"
+                        data-style="background-image:url(https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_2_big.jpg)"
+                      ></div>
+                    </figure>
+                  </div>
+                </div>
+                <div class="c-slider_background_item js-slider-item">
+                  <div
+                    class="c-slider_background_item_inner o-image_wrapper js-animate"
+                  >
+                    <!-- 1080px * 1080px -->
+                    <figure class="o-image">
+                      <div
+                        class="c-slider_background_item_image js-lazy-background"
+                        data-style="background-image:url(https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_3_big.jpg)"
+                      ></div>
+                    </figure>
+                  </div>
+                </div>
+                <div class="c-slider_background_item js-slider-item">
+                  <div
+                    class="c-slider_background_item_inner o-image_wrapper js-animate"
+                  >
+                    <!-- 1080px * 1080px -->
+                    <figure class="o-image">
+                      <div
+                        class="c-slider_background_item_image js-lazy-background"
+                        data-style="background-image:url(https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_4_big.jpg)"
+                      ></div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="c-slider_main js-slider">
+                <div class="c-slider_main_item js-slider-item is-active">
+                  <div class="c-slider_main_item_inner">
+                    <!-- 1080px * 548px -->
+                    <div class="c-slider_main_item_image_wrapper">
+                      <figure
+                        class="c-slider_main_item_image js-animate"
+                        data-speed="-1.5"
+                        data-horizontal=""
+                      >
+                        <img
+                          data-src="https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_1_small.jpg"
+                          class="js-animate"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-slider_main_item js-slider-item js-animate">
+                  <div class="c-slider_main_item_inner">
+                    <!-- 1080px * 548px -->
+                    <div class="c-slider_main_item_image_wrapper">
+                      <figure
+                        class="c-slider_main_item_image js-animate"
+                        data-speed="-1.5"
+                        data-horizontal=""
+                      >
+                        <img
+                          data-src="https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_2_small.jpg"
+                          class="js-animate"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-slider_main_item js-slider-item js-animate">
+                  <div class="c-slider_main_item_inner">
+                    <!-- 1080px * 548px -->
+                    <div class="c-slider_main_item_image_wrapper">
+                      <figure
+                        class="c-slider_main_item_image js-animate"
+                        data-speed="-1.5"
+                        data-horizontal=""
+                      >
+                        <img
+                          data-src="https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_3_small.jpg"
+                          class="js-animate"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-slider_main_item js-slider-item js-animate">
+                  <div class="c-slider_main_item_inner">
+                    <!-- 1080px * 548px -->
+                    <div class="c-slider_main_item_image_wrapper">
+                      <figure
+                        class="c-slider_main_item_image js-animate"
+                        data-speed="-1.5"
+                        data-horizontal=""
+                      >
+                        <img
+                          data-src="https://homesociete.ca/themes/homesociete/resources/assets/images/static/carousel/slider_4_small.jpg"
+                          class="js-animate"
+                          alt=""
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-slider_counter_wrapper">
+                <div class="c-slider_counter">
+                  <div class="c-slider_counter_list js-slider">
+                    <div
+                      class="c-slider_counter_list_item js-slider-item is-active"
+                    >
+                      1
+                    </div>
+                    <div class="c-slider_counter_list_item js-slider-item">
+                      2
+                    </div>
+                    <div class="c-slider_counter_list_item js-slider-item">
+                      3
+                    </div>
+                    <div class="c-slider_counter_list_item js-slider-item">
+                      4
+                    </div>
+                  </div>
+                  <div class="c-slider_counter_base js-length">4</div>
+                </div>
+                <div class="c-slider_counter_line"></div>
+              </div>
+              <div class="o-cursor js-cursor">
+                <div class="o-cursor_inner">
+                  <svg aria-hidden="true" role="img">
+                    <use
+                      href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-right"
+                      xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- About block -->
+          <div class="o-scroll_section" id="about">
+            <section class="c-block-content">
+              <div class="c-block-content_summary js-animate"></div>
+              <div class="c-block-content_footer">
+                <div class="o-layout -gutter">
+                  <div class="o-layout_item u-1/2@from-small">
+                    <div class="c-block-content_text u-text js-animate"></div>
+                  </div>
+                  <div class="o-layout_item u-1/2@from-small">
+                    <div class="c-block-content_text u-text js-animate"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="c-block-content_label">About</p>
+            </section>
+          </div>
+
+          <!-- Promo block -->
+
+          <!-- Brand list -->
+
+          <div class="o-scroll_section">
+            <div class="o-scroll_section_separator">
+              <div class="o-scroll_section_separator_inner">
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-section"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-section"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="o-scroll_section">
+            <div class="c-contact" id="contact" data-module="Form">
+              <div class="c-contact_content">
+                <div
+                  class="c-contact_content_summary c-block-content_summary js-animate"
+                ></div>
+                <div class="c-contact_newsletter js-animate">
+                  <span
+                    class="c-contact_newsletter_target"
+                    id="newsletter"
+                  ></span>
+                  <p>Get all the latest news and promotions.</p>
+                  <form
+                    class="c-contact_newsletter_form js-form"
+                    method="POST"
+                    data-action="https://homesociete.ca/wp-ajax.php?action=process_form_submissions"
+                  >
+                    <input type="hidden" name="lang" value="en" />
+                    <input type="hidden" name="input_2" value="en" />
+                    <input type="hidden" name="form_id" value="2" />
+                    <input
+                      type="hidden"
+                      name="source_url"
+                      value="https://homesociete.ca/en/privacy-policy/"
+                    />
+                    <input type="hidden" name="is_submit_2" value="1" />
+
+                    <label for="newsletter-email" class="is-hidden"
+                      >Your e-mail</label
+                    >
+                    <input
+                      id="newsletter-email"
+                      name="input_1"
+                      class="c-contact_newsletter_input"
+                      type="email"
+                      placeholder="Your e-mail"
+                    />
+                    <button
+                      class="c-contact_newsletter_submit"
+                      type="submit"
+                      data-module="Event"
+                      data-event-action="click"
+                      data-event-category="Newsletter"
+                      data-event-label="Submit newsletter subscription"
+                    >
+                      <svg aria-hidden="true" role="img">
+                        <use
+                          href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-right"
+                          xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#arrow-right"
+                        ></use>
+                      </svg>
+                    </button>
+                  </form>
+                  <div class="js-post-submit" style="display: none">
+                    <p>You are subscribed. Stay tuned!</p>
+                  </div>
+                  <div class="js-pre-submit">
+                    <p>You can unsubscribe at any time.</p>
+                  </div>
+                  <button
+                    type="button"
+                    class="c-contact_col_footer_link o-link"
+                    data-module="Page, Event"
+                    data-url="https://homesociete.ca/en/privacy-policy/"
+                    data-title="Privacy Policy"
+                    data-current=""
+                    data-event-action="click"
+                    data-event-category="Opening popup"
+                    data-event-label="Privacy Policy"
+                  >
+                    Privacy Policy
+                    <div class="is-hidden js-content">
+                      <div class="c-popup_content_inner">
+                        <header class="c-popup_header">
+                          <h1 class="c-popup_title">Privacy Policy</h1>
+                        </header>
+                        <div class="c-popup_main o-wysiwyg">
+                          <h2>Introduction</h2>
+                          <p>
+                            Welcome to the G2MC Websites and e-commerce
+                            Services. We are delighted that you have chosen to
+                            shop with us. G2MC (the company that owns the
+                            website you are visiting) takes your privacy and
+                            security of Personal Information very seriously. We
+                            have provided and will continue to provide a secure
+                            environment and this strict Privacy Policy (the
+                            “<strong>Policy</strong>”) that describes the
+                            limited ways your information is used and the
+                            limited access to such information.
+                          </p>
+                          <h2>Key Elements of this Policy</h2>
+                          <p>
+                            Here are the key elements of this Policy so you can
+                            know the important parts right away to make an
+                            informed decision about your consent for our
+                            collection and use of your Personal Information. You
+                            can find the details in the rest of the Policy.
+                          </p>
+                          <h2>Personal Information we collect from you</h2>
+                          <p>
+                            Contact information, such as your email address and
+                            phone number<br />Account information &#8211; your
+                            email address<br />Billing information such as your
+                            credit card information<br />Delivery information
+                            &#8211; your address
+                          </p>
+                          <h2>What we do with it</h2>
+                          <ul>
+                            <li>Communicate with you</li>
+                            <li>Manage your account</li>
+                            <li>Process the payments for your purchases</li>
+                            <li>Deliver the products you purchased</li>
+                          </ul>
+                          <h2>Third parties we share it with</h2>
+                          <ul>
+                            <li>
+                              Companies who provide our communications services,
+                              such as Zendesk
+                            </li>
+                            <li>
+                              Companies that provided the infrastructure for our
+                              websites
+                            </li>
+                            <li>Payment processing companies such as PayPal</li>
+                            <li>Delivery services such as Canada Post</li>
+                          </ul>
+                          <h2>Definitions</h2>
+                          <p>
+                            This Policy covers several different Websites and
+                            situations, so please refer to the following
+                            definitions for clarification:
+                          </p>
+                          <p>
+                            “<strong>G2MC</strong>” refers G2MC Inc., a duly
+                            incorporated company in the Province of Quebec,
+                            Canada. Where the present Policy refers to “G2MC”,
+                            it may refer to G2MC and / or its affiliates,
+                            subsidiaries, employees, officers, directors,
+                            subcontractors, agents, partners or representatives,
+                            depending on the context. Any reference to
+                            “<strong>we</strong>”, “<strong>our</strong>”, or
+                            “<strong>us</strong>” in this Policy shall also
+                            refer to G2MC Inc.
+                          </p>
+                          <p>
+                            “<strong>Products</strong>” refers to the various
+                            products for your home you can purchase through the
+                            Services on a Website.
+                          </p>
+                          <p>
+                            “<strong>Services</strong>” are the e-commerce
+                            software services that G2MC has developed and / or
+                            licensed that allow you to purchase Products on the
+                            Websites, and related functionalities. The Services
+                            may vary depending on which Website is being
+                            accessed; however, the present Policy covers any and
+                            all of the Services.
+                          </p>
+                          <p>
+                            “<strong>Users</strong>” refers to anyone using any
+                            of the Websites or Services. In this Policy, a
+                            Website visitor or Services User may also be
+                            referred to as “<strong>you</strong>”. When a
+                            Services User has created an account and is logged
+                            in, they may be referred to as a “<strong
+                              >Logged-in User</strong
+                            >”. When a Services User has made a purchase of a
+                            Product, they may be referred to as a
+                            “<strong>Purchaser</strong>”.
+                          </p>
+                          <p>
+                            “<strong>Websites</strong>” refers to all of the
+                            Websites which are owned and operated by G2MC, and
+                            includes all their respective subdomains, present
+                            and future. The present Policy covers your visiting
+                            or use of any and all of the Websites. The Websites
+                            are currently limited to the following:
+                          </p>
+                          <ul>
+                            <li>
+                              “<strong>Home Société</strong>” located at the
+                              URL:
+                              <a
+                                href="https://homesociete.ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://homesociete.ca/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>Jardin de Ville</strong>” located at the
+                              URL:
+                              <a
+                                href="https://www.jardindeville.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://www.jardindeville.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>La Galerie du Meuble</strong>” located at
+                              the URL:
+                              <a
+                                href="https://www.lagaleriedumeuble.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://www.lagaleriedumeuble.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>Maison Corbeil</strong>” located at the
+                              URL:
+                              <a
+                                href="https://maisoncorbeil.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://maisoncorbeil.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>MUST</strong>” located at the URL:
+                              <a
+                                href="http://mustmaison.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >http://mustmaison.com/</a
+                              >
+                            </li>
+                          </ul>
+                          <p>
+                            Additional definitions shall be made throughout this
+                            Policy, but they will be recognizable as they will
+                            be capitalized, bolded, and in quotation marks.
+                            Additional definitions may also be found in the
+                            <a
+                              href="../terms-of-use/index.htm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Terms of Use</a
+                            >, and will have the same meaning in this Policy as
+                            they do there. The definitions found in this Policy
+                            shall also apply to the
+                            <a
+                              href="../terms-of-use/index.htm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Terms of Use</a
+                            >.
+                          </p>
+                          <h2>Acceptance and Modifications</h2>
+                          <p>
+                            <em
+                              >By visiting any of the Websites and / or using
+                              any of the Services (including but not limited to
+                              purchasing a Product), by clicking or tapping the
+                              acceptance button upon purchasing a Product or
+                              signing up for an account, or by registering for
+                              an account, you agree to be bound by the terms of
+                              the Policy. By submitting Personal Information to
+                              us on a Website, through the Services or via other
+                              means, you consent to G2MC’s collection, use and
+                              disclosure of such Personal Information (as that
+                              term is defined hereinbelow) in accordance with
+                              this Policy (as amended from time to time) and as
+                              permitted or required by law. If you do not agree
+                              to all the provisions contained in the Policy, you
+                              are not authorized to use the Website or Services,
+                              and if you are making an order, you should not
+                              proceed with your order.</em
+                            >
+                          </p>
+                          <p>
+                            G2MC reserves the right, at any time and without
+                            prior notice, to modify or replace any of the
+                            Policy. Any changes to the Policy can be found at
+                            this URL. It is your responsibility to check the
+                            Policy periodically for changes. Your use of a
+                            Website or the Services following the posting of any
+                            changes to the Policy constitutes acceptance of
+                            those changes. If there are any significant changes
+                            to the Policy that materially affect the way we
+                            treat your information, we will use commercially
+                            reasonable efforts to notify you by sending a notice
+                            to the primary email address specified in your
+                            account, or by posting a prominent notice on the
+                            Websites.
+                          </p>
+                          <p>
+                            The Policy should be read in conjunction with the
+                            <a
+                              href="../terms-of-use/index.htm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Terms of Use</a
+                            >, as both these documents govern your use of the
+                            Websites and Services.
+                          </p>
+                          <p>
+                            If you have any questions about the Policy or if you
+                            wish to inquire about and / or access any Personal
+                            Information G2MC holds about you, please contact:
+                          </p>
+                          <p style="padding-left: 25px">
+                            G2MC Privacy Officer<br /><a
+                              href="/cdn-cgi/l/email-protection#bbcbc9d2cddad8c2fbdc89d6d895d8da"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><span
+                                class="__cf_email__"
+                                data-cfemail="a7d7d5ced1c6c4dee7c095cac489c4c6"
+                                >[email&#160;protected]</span
+                              ></a
+                            >
+                          </p>
+                          <p>or:</p>
+                          <p style="padding-left: 25px">
+                            G2MC Privacy Officer<br />1215 boul. Crémazie
+                            ouest<br />Montréal, Québec<br />H4N 2W1
+                          </p>
+                          <h2>What Does This Privacy Policy Cover?</h2>
+                          <p>
+                            This Policy covers the treatment of
+                            personally-identifiable information, i.e. any
+                            information that identifies an individual, or can be
+                            used in conjunction with other information to
+                            identify an individual (“<strong
+                              >Personal Information</strong
+                            >”) and other information gathered by G2MC when you
+                            are visiting a Website and / or using the Services.
+                            This Policy also covers G2MC’s treatment of any
+                            Personal Information that G2MC may share with its
+                            business partners or other third parties under very
+                            limited circumstances.
+                          </p>
+                          <p>
+                            This Policy does not apply to the general practices
+                            and treatment of information (whether Personal or
+                            not) by third parties that G2MC does not own or
+                            control, including but not limited to any
+                            third-party websites or services that you elect to
+                            access through the Websites or via a link from the
+                            Websites (“<strong>Third-Party Websites</strong>”),
+                            or to individuals that G2MC does not manage or
+                            employ. While we attempt to facilitate access or
+                            link only to those Third-Party Websites that share
+                            our respect for your privacy, we cannot take
+                            responsibility for the content or privacy policies
+                            of those Third-Party Websites. We encourage you to
+                            carefully review the privacy policies of any
+                            Third-Party Websites you access. We have named and
+                            provided links to the most important of these
+                            Third-Party Websites elsewhere in this Policy.
+                          </p>
+                          <p>
+                            Finally, this Policy does not cover any Personal
+                            Information you send to G2MC via any non-secured,
+                            non-encrypted mode of communications such as email,
+                            instant messenger or other messaging service, or
+                            Twitter or any other social media, as communications
+                            via these methods may be subject to interception,
+                            loss, or alteration. While we welcome your comments
+                            and suggestions sent to us in this manner, we
+                            encourage you to carefully examine what Personal
+                            Information you send to G2MC via these methods.
+                          </p>
+                          <h2>
+                            No Collection of Personal Information as a Matter of
+                            Course
+                          </h2>
+                          <p>
+                            G2MC does not, as a matter of course, gather any of
+                            your Personal Information while you visit the
+                            Websites or are using the Services, unless you are
+                            asked to provide such information, for example by
+                            signing up for an account or making a purchase of
+                            Products. Personal Information is only gathered with
+                            your informed consent. Where you have provided
+                            Personal Information, it will only be used for the
+                            stated purpose, as detailed more specifically in the
+                            next section.
+                          </p>
+                          <h2>Personal Information Collected and Its Uses</h2>
+                          <p>
+                            The following is an exhaustive list of Personal
+                            Information collected from you when you visit the
+                            Websites use the Services and what we use it for.
+                            You acknowledge and agree that you are submitting
+                            this Personal Information with your informed
+                            consent.
+                          </p>
+                          <ul>
+                            <li>
+                              “<strong>Contact Information</strong> If you fill
+                              out a contact form on a Website, you will be asked
+                              for the following Personal Information: your first
+                              and last names, and email address. You may also
+                              furnish additional optional Personal Information.
+                              We only use this Contact Information to respond to
+                              your inquiry. You may also be submitting your
+                              email address in our live chat window. This
+                              information is only used to follow up with you
+                              after the chat session is over if necessary.
+                            </li>
+                            <li>
+                              “<strong
+                                >Employment application information’’.</strong
+                              >
+                              If you apply for a job using an online form, you
+                              will be asked for the following Personal
+                              Information: your first and last names, email
+                              address, and any Personal Information that may be
+                              contained in your C.V. We use this information
+                              only for the purpose of evaluating your candidacy
+                              for the job and to communicate with you.
+                            </li>
+                            <li>
+                              <strong>“Account Information”</strong>. As
+                              specified in the Terms of Use, Users of the
+                              certain of the Services will be required to create
+                              an account and enter the following Personal
+                              Information in order to use those functions of the
+                              Services requiring an account: first name, last
+                              name, and email address. This Account Information
+                              is used to manage your account, to verify your
+                              credentials for logging-in to the Services to use
+                              those functions available only to account holders,
+                              to communicate with you information about your
+                              account, and to communicate with you information
+                              about the Services.
+                            </li>
+                            <li>
+                              “<strong>Billing Information</strong>”. As a
+                              Purchaser, you will be required to enter the
+                              following information in order to complete your
+                              payment: your name, email, billing address, credit
+                              card number, credit card expiry date, name on the
+                              credit card, and security (CVC) number. In
+                              addition, as a Purchaser you will be required to
+                              enter Contact Information (email address and phone
+                              number). This information is only used to process
+                              the credit card transaction for your purchase of
+                              Products, to send you confirmation about your
+                              purchase, to communicate with you about your
+                              purchase if necessary, and to facilitate repeat
+                              payments. For more details on the treatment of
+                              your Billing Information, please see the
+                              <em>Secured Payments</em> section further below in
+                              this Policy.
+                            </li>
+                            <li>
+                              “<strong>Delivery Information</strong>”. As a
+                              Purchaser, you will also be required to enter your
+                              delivery address, if different from your billing
+                              address. This Delivery Information is used to
+                              deliver your Product(s) purchased.
+                            </li>
+                          </ul>
+                          <p>
+                            In addition to the functions and uses just
+                            described, G2MC may also use your Personal
+                            Information you have submitted in order to:
+                          </p>
+                          <ul>
+                            <li>
+                              Conduct user surveys, and research and analysis
+                              about your use of, or interest in, our Products
+                              and the Services;
+                            </li>
+                            <li>
+                              Communicate with you about G2MC Products and the
+                              Services. For more information about your use of
+                              your email address, please refer to the “Email
+                              Communications” section further in this Policy;
+                            </li>
+                            <li>
+                              Perform general User and Purchaser support; and
+                            </li>
+                            <li>
+                              Perform any functions as otherwise explicitly
+                              described to you at the time of your submission of
+                              your Personal Information.
+                            </li>
+                          </ul>
+                          <h2>Security of Information</h2>
+                          <p>
+                            G2MC uses only industry best practices (physical,
+                            electronic and procedural) in keeping any data
+                            collected (including Personal Information) secure.
+                            In addition, G2MC uses third-party vendors and
+                            hosting partners to provide the necessary hardware,
+                            software, networking, storage, and related
+                            technology required to operate the Websites and
+                            Services, and these third parties have been selected
+                            for their high standards of security, both
+                            electronic and physical. For example, G2MC uses
+                            <a
+                              href="https://www.ovh.com/ca"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >OVH</a
+                            >
+                            and
+                            <a
+                              href="http://www.ecritel-cloud.com/en/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Écritel</a
+                            >, recognized leaders in secure data, for hosting of
+                            the Websites and Services, and storage of User data
+                            including Personal Information. Please note that
+                            these third parties may not be located in your home
+                            jurisdiction – please see the “Transfer of Personal
+                            Information Outside Your Home Jurisdiction” section
+                            further in this Policy for more information.
+                          </p>
+                          <p>
+                            Finally, all information, including Personal
+                            Information, is transferred with encryption using
+                            Secure Sockets Layer (“SSL”), a robust security
+                            standard for Internet data transfer and
+                            transactions. You can use your browser to check the
+                            valid SSL security certificate of any of the
+                            Websites.
+                          </p>
+                          <h2>
+                            Non-disclosure of Personal Information to Third
+                            Parties
+                          </h2>
+                          <p>
+                            Except as provided in the next paragraph and
+                            specified in the next three sections of this Policy,
+                            G2MC does not divulge any Personal Information
+                            gathered via the Websites or Services to third
+                            parties. Moreover, G2MC does not sell, rent, trade
+                            or license any Personal Information regarding its
+                            Websites’ visitors or Users to third parties. Only
+                            the employees, representatives, subcontractors,
+                            officers, agents, or assigns of G2MC are responsible
+                            for the management and development of the Websites
+                            and Services, and only these individuals have access
+                            to the information collected there. These employees,
+                            representatives, subcontractors, officers, agents or
+                            assigns all have been instructed to comply with the
+                            Policy, and are under contractual obligations of
+                            non-disclosure.
+                          </p>
+                          <p>
+                            Notwithstanding anything in the Policy to the
+                            contrary, we may share any information we have
+                            collected about you or that you have submitted
+                            (whether Personal Information or not): (1) in
+                            response to subpoenas, court orders, or legal
+                            process, or to establish, protect, or exercise our
+                            legal rights or defend against legal claims or
+                            demands; (2) if we believe it is necessary in order
+                            to investigate, prevent, or take action regarding
+                            illegal activities, fraud, or situations involving
+                            potential threats to the safety of any person, or
+                            any violation of the Terms of Use; (3) if we believe
+                            it is necessary to investigate, prevent, or take
+                            action regarding situations that involve abuse of
+                            the Websites or Services infrastructure or the
+                            Internet in general (such as voluminous spamming,
+                            denial of service attacks, or attempts to compromise
+                            the security of the Websites or Services
+                            infrastructure or the Websites or Services
+                            generally); (4) to a parent company, subsidiaries,
+                            joint ventures, or other companies under common
+                            control with G2MC (in which case we will require
+                            such entities to honour this Policy); (5) if G2MC
+                            merges with another entity, is subject to a
+                            corporate reorganization, or sells or transfers all
+                            or part of its business, assets or shares (in which
+                            case we will require such entity to assume our
+                            obligations under this Policy, or inform you that
+                            you are covered by a new privacy policy).
+                          </p>
+                          <h2>
+                            Transfer of Personal Information to Third-Party
+                            Services
+                          </h2>
+                          <p>
+                            G2MC uses certain “<strong
+                              >Third-Party Services</strong
+                            >” in order to augment the functionalities of the
+                            Websites and Services. When you submit Personal
+                            Information to us for the use of these
+                            functionalities you acknowledge and agree to the
+                            transfer of Personal Information to these
+                            Third-Party Services. The Third-Party Services used
+                            and the information sent to them and the purposes
+                            for their use are:
+                          </p>
+                          <ul>
+                            <li>
+                              Where you have chosen to log in to certain
+                              functions of the Services using your Facebook,
+                              Google+, or other social media account (“<strong
+                                >Social Media Service</strong
+                              >”), or choose to share Website or Services
+                              content through any Social Media Service such as
+                              Pinterest, we may transfer Personal Information to
+                              the Social Media Service in the form of your login
+                              credentials if you are not already logged-in to
+                              the Social Media Service on the computer or device
+                              being used. Your Personal Information is
+                              transferred securely and only used in order to log
+                              in so you can use that function of the Services or
+                              share content.
+                            </li>
+                            <li>
+                              G2MC uses
+                              <a
+                                href="https://www.zendesk.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Zendesk</a
+                              >
+                              for live chat services. Your name and email
+                              address are transferred to Zendesk in order for
+                              the chat to function, and to follow up with you
+                              after the chat session is over if necessary.
+                            </li>
+                            <li>
+                              G2MC uses
+                              <a
+                                href="https://www.google.ca/maps"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Google Maps</a
+                              >
+                              and other mapping and address services to help
+                              pinpoint your address when using the Services but
+                              no Personal Information is sent to these
+                              Third-Party Services, with the exception of your
+                              location, to the extent this is considered
+                              Personal Information.
+                            </li>
+                            <li>
+                              As described in the Terms of Use, G2MC uses
+                              certain Third-Party Delivery Services (Canada Post
+                              and FedEx) to deliver purchased Product(s). Your
+                              Delivery Information is transferred to these
+                              Third-Party Delivery Services, via third-party
+                              <a
+                                href="https://www.shipstation.com/ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >ShipStation</a
+                              >. ShipStation only uses this Delivery Information
+                              in order to facilitate the delivery of your
+                              purchased Product(s).
+                            </li>
+                            <li>
+                              G2MC uses
+                              <a
+                                href="http://www.meublex.ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Meublex</a
+                              >
+                              to manage our inventory and manage other aspects
+                              of the Services, including information about the
+                              Purchasers and the contracts signed with us. Your
+                              name and address will be visible to Meublex, but
+                              will only be used to the extent needed to manage
+                              the e-commerce contract with you.
+                            </li>
+                          </ul>
+                          <h2>
+                            Email Communications and Compliance with Anti-Spam
+                            Laws
+                          </h2>
+                          <p>
+                            G2MC currently uses
+                            <a
+                              href="https://mailchimp.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >MailChimp</a
+                            >
+                            to send out and manage our newsletter. Contact
+                            Information is transferred to MailChimp in order for
+                            our email communications to function properly. Your
+                            Contact Information is only used for the proper
+                            sending out of the newsletter; MailChimp does not
+                            use this Personal Information for any other purpose
+                            and will not transfer or sell your Personal
+                            Information to any other third party. You may
+                            unsubscribe from receiving commercial or promotional
+                            emails from us at any time by following the link at
+                            the bottom of any email sent to you.
+                          </p>
+                          <p>
+                            Other types of emails, such as transactional,
+                            relational, and other emails related to the Services
+                            and your purchases will not have an opt-out option
+                            as they are necessary for the use of the Services.
+                          </p>
+                          <p>
+                            G2MC’s practices in regards to its email are
+                            designed to be compliant with anti-spam laws,
+                            specifically the law unofficially called “CASL”, or
+                            Canada’s Anti-Spam Law (S.C. 2010, c. 23). If you
+                            believe you have received email in violation of
+                            these laws, please contact us using the contact
+                            information further up in this Policy.
+                          </p>
+                          <h2>Secured Payments</h2>
+                          <p>
+                            G2MC currently uses the “<strong
+                              >Third-Party Payment Processors</strong
+                            >”
+                            <a
+                              href="https://stripe.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Stripe</a
+                            >
+                            and
+                            <a
+                              href="https://www.paypal.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >PayPal</a
+                            >
+                            for processing of secured payments for purchases of
+                            Products. When you make a payment through the
+                            Services, your Billing Information is transferred
+                            securely via SSL from the Services to the
+                            Third-Party Payment Processor being used. No Billing
+                            Information is ever stored on servers controlled by
+                            G2MC. The Third-Party Payment Processors have our
+                            permission to store, on behalf of G2MC, the data
+                            pertaining to the executed transactions by
+                            Purchasers (including all Billing Information) with
+                            the goal of ensuring a secure method of payment and
+                            proof of purchase archive, allowing for the
+                            protection of Purchasers, and for follow-up as
+                            needed. This data may be used for validation and
+                            registration purposes of Purchasers, and to trace
+                            any fraudulent activities if necessary.
+                          </p>
+                          <h2>
+                            Limited Gathering of Information for Statistical,
+                            Analytical and Security Purposes
+                          </h2>
+                          <p>
+                            G2MC may automatically collect certain information
+                            using third-party analytics programs such as
+                            <a
+                              href="https://www.optimizely.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Optimizely</a
+                            >
+                            and
+                            <a
+                              href="https://www.google.com/analytics/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Google Analytics</a
+                            >
+                            to help us understand how our Users use the Websites
+                            and Services, but none of this information
+                            identifies you personally. For example, each time
+                            you visit the Websites or use the Services, we
+                            automatically collect (as applicable) your IP
+                            address, browser and computer or device type, access
+                            times, the web page from which you came, the web
+                            page(s) or content you access, and other related
+                            information. We use information collected in this
+                            manner only to better understand your needs and the
+                            needs of Website visitors and Services Users in the
+                            aggregate. G2MC also makes use of information
+                            gathered for statistical purposes to keep track of
+                            the number of visits to the Websites, the specific
+                            pages on the Websites, and Users with a view to
+                            introducing improvements to the Websites and
+                            Services.
+                          </p>
+                          <p>
+                            G2MC also uses
+                            <a
+                              href="https://www.hotjar.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Hotjar</a
+                            >
+                            to track Users, how they use the Websites and
+                            Services, to improve the Websites and Services, and
+                            to diagnose technical problems. Hotjar uses cookies
+                            and other technologies to collect data on our Users’
+                            behavior and their devices; in particular your
+                            device&#8217;s IP address (captured and stored only
+                            in anonymized form), device screen size, device type
+                            (unique device identifiers), browser information,
+                            geographic location (country only), preferred
+                            language used to display our Websites. Hotjar stores
+                            this information in a pseudonymized user profile.
+                            Neither Hotjar nor we will ever use this information
+                            to identify individual users or to match it with
+                            further data on an individual User. You can find out
+                            more information about the use of Hotjar
+                            <a
+                              href="https://www.hotjar.com/legal/policies/privacy#enduserenglish"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >at this link</a
+                            >. You can opt out of our use of Hotjar for you
+                            <a
+                              href="https://www.hotjar.com/legal/compliance/opt-out"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >at this link</a
+                            >.
+                          </p>
+                          <p>
+                            Your IP address and other relevant information we
+                            collect using these programs may be used in order to
+                            trace any fraudulent or criminal activity, or any
+                            activity in violation of the Terms of Use.
+                          </p>
+                          <h2>Aggregated Information</h2>
+                          <p>
+                            In addition to the information collected by the
+                            analytics programs as described in the previous
+                            section, we may also generate, use and disclose
+                            aggregated and / or anonymized information and
+                            statistics about the Services and Services Users for
+                            marketing and strategic purposes. However, no User
+                            of our Services will be individually identifiable
+                            from these aggregated and / or anonymized
+                            information and statistics.
+                          </p>
+                          <h2>
+                            Tracking Technology (&#8220;Cookies&#8221;) and
+                            Related Technologies
+                          </h2>
+                          <p>
+                            G2MC uses tracking technology (“cookies” and related
+                            technology such as tags, pixels and web beacons) on
+                            the Websites and by visiting a Website or using the
+                            Services you agree to their use. Cookies are small
+                            text files placed on your computer or device when
+                            you visit a website, in order to track use of the
+                            site and to improve the user experience by storing
+                            certain data on your computer. The Websites use
+                            “session cookies,” which improve your user
+                            experience by storing certain information from your
+                            current visit on your computer or device while you
+                            are a Logged-in User or making a purchase of
+                            Products.
+                          </p>
+                          <p>
+                            Specifically, we use cookies for the following
+                            functions:
+                          </p>
+                          <ul>
+                            <li>
+                              to facilitate your signing-in to the Services;
+                            </li>
+                            <li>
+                              to facilitate the payment processing when you
+                              purchase Products;
+                            </li>
+                            <li>
+                              to keep track of your preferences while using the
+                              Services;
+                            </li>
+                            <li>
+                              to provide general internal and User analytics and
+                              to conduct research to improve the content of the
+                              Websites and Services using analytics programs as
+                              described above in this Policy;
+                            </li>
+                            <li>to facilitate online chat services;</li>
+                            <li>
+                              to facilitate advertising as described in the next
+                              section of this Policy; and
+                            </li>
+                            <li>
+                              to assist in identifying possible fraudulent
+                              activities.
+                            </li>
+                          </ul>
+                          <p>
+                            Your browser can be set to refuse cookies or delete
+                            them after they have been stored. Please refer to
+                            your browser’s help section for instructions. Please
+                            note that deleting these cookies may reduce your
+                            user experience on the Services by requiring you to
+                            re-enter certain information, including information
+                            required to use the Services. Furthermore, deleting
+                            cookies may prevent certain functions from working
+                            at all. G2MC and its Representatives shall not be
+                            held responsible for any function that may not
+                            operate after you delete cookies, or any losses or
+                            damages (pecuniary or otherwise) arising from those
+                            functions not operating, or having reduced
+                            functionality.
+                          </p>
+                          <h2>Advertising and Opting Out</h2>
+                          <p>
+                            G2MC currently uses Google AdWords and Display
+                            <a
+                              href="https://adwords.google.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Network</a
+                            >
+                            and by using our Services you consent to this use.
+                            Specifically, G2MC uses the remarketing features of
+                            interest-based advertising of Google AdWords that
+                            delivers you advertisements that will be of
+                            particular interest to you, based on your browsing
+                            and activity history at our websites. These
+                            advertisements will appear on third-party websites
+                            around the web. Google uses specific cookies to
+                            allow them to serve these ads around the web.
+                          </p>
+                          <p>
+                            You may prevent this type of advertising by deleting
+                            the appropriate Google cookie through your browser,
+                            though this may not be permanent. For a more
+                            permanent solution, you may opt out of such Google
+                            advertising by following
+                            <a
+                              href="https://adwords.google.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Google’s instructions</a
+                            >.
+                          </p>
+                          <p>
+                            G2MC also advertises using
+                            <a
+                              href="https://www.facebook.com/business/a/online-sales/custom-audiences-website"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Facebook Custom Audience</a
+                            >, to display advertisements to you on Facebook that
+                            will be of interest to you, and by visiting the
+                            Websites or using the Services you consent to this
+                            use. Facebook may collect or receive information
+                            from our Websites and other websites and use that
+                            information to provide measurement services and
+                            targeted ads. If you do not want to receive such
+                            Facebook advertisements, please contact us by email
+                            at
+                            <a
+                              href="/cdn-cgi/l/email-protection#8ee7e0e8e1cee6e1e3ebfde1ede7ebfaeba0edef"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><span
+                                class="__cf_email__"
+                                data-cfemail="335a5d555c735b5c5e56405c505a5647561d5052"
+                                >[email&#160;protected]</span
+                              ></a
+                            >.
+                          </p>
+                          <h2>
+                            Verification, Correction and Deletion of Personal
+                            Information
+                          </h2>
+                          <p>
+                            You have the right to: (i) verify what Personal
+                            Information G2MC holds about you; (ii) ask for your
+                            Personal Information to be corrected or updated; and
+                            (iii) to withdraw your consent to the use by G2MC of
+                            your Personal Information and have it deleted from
+                            our records. If you wish to inquire about and verify
+                            and / or correct Personal Information G2MC holds
+                            about you, or if you wish to have all your Personal
+                            Information permanently deleted from our records,
+                            please contact us using the contact information
+                            further up in this Policy. Please note that deletion
+                            of your Personal Information may make it impossible
+                            for you to use the Services, or certain portions
+                            thereof, and G2MC and its Representatives accepts no
+                            responsibility for any damages, pecuniary or
+                            otherwise, resulting therefrom. If you request
+                            deletion of your Personal Information, G2MC reserves
+                            the right to retain some of your Personal
+                            Information for a reasonable time in order to
+                            satisfy our legal obligations or under a legal
+                            procedure of any sort.
+                          </p>
+                          <h2>
+                            Transfer of Personal Information Outside Your Home
+                            Jurisdiction
+                          </h2>
+                          <p>
+                            Users may access the Websites from any country in
+                            the world, though in certain countries the
+                            functionalities of the Services may be limited. G2MC
+                            and its third-party vendors, including service
+                            providers and hosting partners, are located in the
+                            United States and Canada. You acknowledge that G2MC
+                            and our third-party vendors may be located in
+                            jurisdictions or countries where the privacy laws
+                            may not be as protective as those in your home
+                            country, state, province or other governmental
+                            jurisdiction, and consent to the transfer of your
+                            Personal Information to such countries.
+                          </p>
+                          <h2>
+                            Risks Associated with the Internet and Wireless Data
+                            Transmission
+                          </h2>
+                          <p>
+                            Despite G2MC’s best efforts to ensure that third
+                            parties will not access or obtain your Personal
+                            Information through your use of the Services or
+                            visiting the Websites, complete confidentiality and
+                            security cannot currently be guaranteed on the
+                            Internet and / or where data is transferred via
+                            digital wireless technology of any type.
+                            Communication via the Internet or wireless data
+                            transmission is subject to interception, loss, or
+                            alteration. You acknowledge and agree that G2MC and
+                            its Representatives cannot be held responsible for
+                            damages resulting from the transmission of
+                            confidential information or Personal Information in
+                            this manner and that such communications are at your
+                            own risk.
+                          </p>
+                          <h2>Compliance with Privacy Laws</h2>
+                          <p>
+                            This Policy and G2MC’s practices in general are
+                            designed to be in compliance with Canada’s
+                            <em
+                              >Personal Information Protection and Electronic
+                              Documents Act</em
+                            >
+                            (“PIPEDA”, S.C. 2000, c. 5) and Quebec’s
+                            <em
+                              >An Act Respecting the Protection Of Personal
+                              Information in the Private Sector</em
+                            >
+                            (R.S.Q. c. P-39.1). If you have any questions
+                            regarding this compliance, please contact us using
+                            the contact information further up in this Policy.
+                          </p>
+                          <p>© G2MC 2019–2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    type="button"
+                    class="c-contact_col_footer_link o-link"
+                    data-module="Page,Event"
+                    data-url="https://homesociete.ca/en/terms-of-use/"
+                    data-title="Terms of Use"
+                    data-event-action="click"
+                    data-event-category="Opening popup"
+                    data-event-label="Terms of use"
+                  >
+                    Terms of Use
+                    <div class="is-hidden js-content">
+                      <div class="c-popup_content_inner">
+                        <header class="c-popup_header">
+                          <h1 class="c-popup_title">Terms of Use</h1>
+                        </header>
+                        <div class="c-popup_main o-wysiwyg">
+                          <h2>
+                            Welcome; Acceptance and Modifications; Contacting Us
+                          </h2>
+                          <p>
+                            Welcome to the G2MC Websites and e-commerce
+                            Services. We are delighted that you have chosen to
+                            shop with us.
+                          </p>
+                          <p>
+                            <strong
+                              ><em
+                                >By visiting any of the Websites and / or using
+                                the Services (including but not limited to
+                                purchasing a Product), by clicking or tapping
+                                the acceptance button upon purchasing a Product
+                                or signing up for an account, or by registering
+                                for an account, you hereby accept to be bound by
+                                these Terms of Use (“TOU”) without any
+                                reservations, modifications, additions or
+                                deletions. If you do not agree to all the
+                                provisions contained in the TOU, you are not
+                                authorized to use the Website or Services, and
+                                if you are making an order, you should not
+                                proceed with your order. The TOU are a legal and
+                                binding agreement between you and us.</em
+                              ></strong
+                            >
+                          </p>
+                          <p>
+                            G2MC reserves the right, at any time and without
+                            prior notice, to modify or replace any of the TOU.
+                            Any changes to the TOU can be found at this URL. It
+                            is your responsibility to check the TOU periodically
+                            for changes. Your use of a Website or the Services
+                            following the posting of any changes to the TOU
+                            constitutes acceptance of those changes. If there
+                            are any significant changes to the TOU that
+                            materially affect your relationship with us, we will
+                            use commercially reasonable efforts to notify you by
+                            sending a notice to the primary email address
+                            specified in your account, or by posting a prominent
+                            notice on the Websites.
+                          </p>
+                          <p>
+                            The TOU should be read in conjunction with the
+                            <a href="index.htm">Privacy Policy,</a> as both
+                            these documents govern your use of the Websites and
+                            Services.
+                          </p>
+                          <p>
+                            If you have any questions about the TOU, please
+                            contact:
+                          </p>
+                          <p style="padding-left: 25px">
+                            G2MC Legal<br />
+                            <a
+                              href="/cdn-cgi/l/email-protection#d2beb7b5b3be92b5e0bfb1fcb1b3"
+                              ><span
+                                class="__cf_email__"
+                                data-cfemail="117d7476707d5176237c723f7270"
+                                >[email&#160;protected]</span
+                              ></a
+                            >
+                          </p>
+                          <p>or:</p>
+                          <p style="padding-left: 25px">
+                            G2MC Legal<br />
+                            1215 boul. Crémazie ouest<br />
+                            Montréal, Québec<br />
+                            H4N 2W1
+                          </p>
+                          <h3>2. Definitions</h3>
+                          <p>
+                            These TOU cover several different Websites and
+                            situations, so please refer to the following
+                            definitions for clarification:
+                          </p>
+                          <p>
+                            “<strong>G2MC</strong>” refers G2MC Inc., a duly
+                            incorporated company in the Province of Quebec,
+                            Canada. Where the present TOU refer to “G2MC”, they
+                            may refer to G2MC and / or its affiliates,
+                            subsidiaries, employees, officers, directors,
+                            subcontractors, agents, partners or representatives,
+                            depending on the context. Any reference to
+                            “<strong>we</strong>”, “<strong>our</strong>”, or
+                            “<strong>us</strong>” in these TOU shall also refer
+                            to G2MC Inc.
+                          </p>
+                          <p>
+                            “<strong>Products</strong>” refers to the various
+                            products for your home you can purchase through the
+                            Services on a Website.
+                          </p>
+                          <p>
+                            “<strong>Services</strong>” are the e-commerce
+                            software services that G2MC has developed and / or
+                            licensed that allow you to purchase Products on the
+                            Websites, and related functionalities. The Services
+                            may vary depending on which Website is being
+                            accessed; however, the present TOU cover any and all
+                            of the Services.
+                          </p>
+                          <p>
+                            “<strong>Users</strong>” refers to anyone using any
+                            of the Websites or Services. In these TOU, a Website
+                            visitor or Services User may also be referred to as
+                            “<strong>you</strong>”. When a Services User has
+                            created an account and is logged in, they may be
+                            referred to as a “<strong>Logged-in User</strong>”.
+                            When a Services User has made a purchase of a
+                            Product, they may be referred to as a
+                            “<strong>Purchaser</strong>”.
+                          </p>
+                          <p>
+                            “<strong>Websites</strong>” refers to all of the
+                            Websites which are owned and operated by G2MC, and
+                            includes all their respective subdomains, present
+                            and future. The present TOU cover your visiting or
+                            use of any and all of the Websites. The Websites are
+                            currently limited to the following:
+                          </p>
+                          <ul>
+                            <li>
+                              “<strong>Home Société</strong>” located at the
+                              URL:
+                              <a
+                                href="https://homesociete.ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://homesociete.ca/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>Jardin de Ville</strong>” located at the
+                              URL:<a
+                                href="https://www.jardindeville.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                https://www.jardindeville.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>La Galerie du Meuble</strong>” located at
+                              the URL:<a
+                                href="https://www.lagaleriedumeuble.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                https://www.lagaleriedumeuble.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>Maison Corbeil</strong>” located at the
+                              URL:<a
+                                href="https://maisoncorbeil.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                https://maisoncorbeil.com/</a
+                              >
+                            </li>
+                            <li>
+                              “<strong>MUST</strong>” located at the URL:<a
+                                href="http://mustmaison.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                http://mustmaison.com/</a
+                              >
+                            </li>
+                          </ul>
+                          <p>
+                            Additional definitions shall be made throughout
+                            these TOU, but they will be recognizable as they
+                            will be capitalized, bolded, and in quotation marks.
+                            Additional definitions may also be found in the
+                            Privacy Policy, and will have the same meaning in
+                            these TOU as they do there. The definitions found in
+                            these TOU shall also apply to the
+                            <a
+                              href="index.htm"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Privacy Policy</a
+                            >.
+                          </p>
+                          <h3>
+                            3. General Code of Conduct for Use of the Websites
+                            and Services
+                          </h3>
+                          <p>
+                            By visiting any of the Websites and / or using any
+                            of the Services, you agree to:
+                          </p>
+                          <p>
+                            (i)     Not use the Websites or Services in any
+                            manner that in any way violates these TOU or any
+                            other applicable policy posted on any of the
+                            Websites by G2MC;
+                          </p>
+                          <p>
+                            (ii)     Not use the Websites or Services in any
+                            manner that violates any intellectual property
+                            rights of G2MC or any third party;
+                          </p>
+                          <p>
+                            (iii)     Not use the Websites or Services in any
+                            manner to propagate spam, including but not limited
+                            to unsolicited advertising or bulk electronic mail
+                            or messages, including to link to a spam or phishing
+                            website;
+                          </p>
+                          <p>
+                            (iv)     Not use the Websites or Services in any
+                            manner to propagate software viruses, Trojan horses,
+                            worms, or any other malicious or non-malicious
+                            computer code, files, or programs that are designed
+                            or intended to disrupt, damage, limit or interfere
+                            with the proper function of any software, hardware,
+                            or telecommunications equipment in any form whether
+                            belonging to G2MC or a third party, or to damage or
+                            obtain unauthorized access to any system, data, or
+                            other information (whether Personal Information or
+                            not) of G2MC, other Users, or any other third party;
+                          </p>
+                          <p>
+                            (v)     Not: (1) take any action that imposes or may
+                            impose (as determined by G2MC in its sole
+                            discretion) an unreasonable or disproportionately
+                            large load on G2MC’s (or its third party providers’)
+                            infrastructures; (2) interfere or attempt to
+                            interfere with the proper functioning of the
+                            Websites or Services or any activities conducted
+                            through the Services; (3) bypass any measures G2MC
+                            may use to prevent or restrict access to the
+                            Services or any element thereof; (4) use manual or
+                            automated software, devices, or other processes to
+                            “crawl” or “spider” any page of the Websites or
+                            Services; or (5) harvest or scrape any content from
+                            the Websites or Services in an unreasonable manner;
+                          </p>
+                          <p>
+                            (vi)     Not take any action or use any process that
+                            removes, modifies, disables, blocks, obscures or
+                            otherwise impairs any advertising or other
+                            promotions in connection with the Websites or
+                            Services;
+                          </p>
+                          <p>
+                            (vii)     Not use the Websites or Services to
+                            advertise or promote products or services that are
+                            not expressly approved in advance in writing by
+                            G2MC, or as permitted by these TOU;
+                          </p>
+                          <p>
+                            (viii)     Not use the Websites or Services to in
+                            any way collect information (whether Personal or
+                            not) of any third party or in violation of G2MC’s
+                            Privacy Policy;
+                          </p>
+                          <p>
+                            (ix)     Not interfere with any third party’s use or
+                            enjoyment of the Websites or Services;
+                          </p>
+                          <p>
+                            (x)     Not do anything or encourage conduct that
+                            would constitute a criminal offense or give rise to
+                            civil liability, or is any way unlawful, illegal,
+                            fraudulent or harmful to any third party;
+                          </p>
+                          <p>
+                            (xi)     Not attempt to do any of the foregoing
+                            prohibitions;
+                          </p>
+                          <p>
+                            (xii)     Use the Websites and Services in good
+                            faith, and in compliance with all applicable local,
+                            provincial or state, national, and international
+                            laws.
+                          </p>
+                          <h3>4. Accounts, Passwords and Logged-in User</h3>
+                          <h4>a. Accounts and Passwords</h4>
+                          <p>
+                            In order to use certain aspects and functions of the
+                            Services, you may be required to create an account.
+                            Accounts are available to anyone who provides the
+                            requisite information, subject to the restrictions
+                            and conditions as outlined elsewhere in these TOU.
+                          </p>
+                          <p>
+                            As part of the account registration, you may be
+                            asked to choose a password. It is your
+                            responsibility to create a password of sufficient
+                            strength that cannot easily be discovered by third
+                            parties. You may also be assigned a password. You
+                            are responsible for maintaining the confidentiality
+                            of your password, and are responsible for all
+                            activities that occur under your account whether by
+                            you or any third party. You agree to immediately
+                            notify us of any unauthorized use of your account or
+                            any other breach of security regarding your account.
+                          </p>
+                          <p>
+                            If you are a Logged-in User, it is strongly
+                            suggested that you log out of your account at the
+                            end of every session, or not leave a logged-in
+                            account unattended for any period of time. G2MC, its
+                            affiliates, and their respective shareholders,
+                            officers, directors, employees, agents, partners,
+                            principals, representatives, successors and assigns
+                            (collectively “<strong>Representatives</strong>”),
+                            will not be held liable for any losses or damages,
+                            direct or indirect, pecuniary or non-pecuniary,
+                            resulting from your failure to log out at the end of
+                            the session, an unattended logged-in session, or a
+                            third party using the Services with your Account
+                            Information and accessing your account through any
+                            means, and disclaims any responsibility in this
+                            regard.
+                          </p>
+                          <p>
+                            G2MC reserves the right to suspend or terminate your
+                            account, at its sole discretion, at any time and for
+                            any reason, including but not limited to whether you
+                            have violated the letter or spirit of the TOU, as
+                            more fully described hereinbelow.
+                          </p>
+                          <h4>b. Age Requirements</h4>
+                          <p>
+                            You must be 18 years of age or the age of majority
+                            in your province, state, territory or country, to
+                            have an account or to use the Services to purchase
+                            Products. Individuals under the age of 18, or
+                            applicable age of majority, may utilize the Services
+                            only with the involvement of a parent or legal
+                            guardian, under such person&#8217;s account and
+                            otherwise subject to these TOU.
+                          </p>
+                          <h4>c. Account Information</h4>
+                          <p>
+                            The information required to create a User account is
+                            the following: first name, last name, and email
+                            address. This information you submit as part of the
+                            sign-up process may be referred to in the present
+                            TOU or the Privacy Policy as “<strong
+                              >Account Information</strong
+                            >”.
+                          </p>
+                          <p>
+                            By submitting Account Information, you represent and
+                            warrant that the Account Information is true and
+                            accurate to the best of your knowledge. Submitting
+                            false or misleading Account Information may result
+                            in you being banned from using the Services, at our
+                            sole discretion.
+                          </p>
+                          <h3>5. Products, Pricing, Taxes and Payment</h3>
+                          <h4>a. Products for Sale through the Services</h4>
+                          <p>
+                            We have done our best to display as accurately as
+                            possible the colours of the Products shown on the
+                            Websites. However, because the colours you see will
+                            depend on your monitor or display, we cannot
+                            guarantee that your display of any Product colour
+                            will be accurate. While the Websites attempt to be
+                            accurate in its product descriptions, G2MC does not
+                            represent or warrant that Product descriptions or
+                            other content on the Websites is accurate, complete,
+                            reliable, current, or error-free. If you find that a
+                            Product you purchase is not as described, your sole
+                            remedy is to return it in accordance with G2MC
+                            &#8216;s Return Policy.
+                          </p>
+                          <p>
+                            The purchase of Products on the Websites is subject
+                            to availability. In the event that G2MC advises you
+                            that any products are no longer available, G2MC will
+                            have no obligation to fulfill your order and you
+                            will have no obligation to pay G2MC for the order.
+                          </p>
+                          <h4>b. Pricing and Payments</h4>
+                          <p>
+                            Prices displayed through the Services are firm and
+                            in Canadian dollars, which may be converted to other
+                            currencies at the time of payment processing,
+                            depending on your country of origin and / or credit
+                            card account agreement. Prices do not include
+                            applicable sales taxes, delivery fees or any other
+                            applicable fees, which shall be displayed during the
+                            checkout process, depending on your location and
+                            selections you have made (for example delivery
+                            method).
+                          </p>
+                          <p>
+                            By confirming your purchase at the end of the
+                            checkout process by clicking the Place Order button,
+                            you agree to pay G2MC the amount set out as the
+                            Total in the Order Summary section of the checkout
+                            process. The Total is quoted in Canadian dollars and
+                            includes shipping and handling fees, any applicable
+                            environmental or other additional fees, and all
+                            applicable taxes.
+                          </p>
+                          <p>
+                            While we strive for accuracy in the pricing
+                            displayed on the Websites and the other product
+                            information we provide, errors can occur. In the
+                            event that a Product is mistakenly listed at an
+                            incorrect price, G2MC reserves the right to refuse
+                            or cancel any orders placed for product listed at
+                            the incorrect price. G2MC reserves the right to
+                            refuse or cancel any such orders whether or not the
+                            order has been confirmed and the Purchaser&#8217;s
+                            credit card or PayPal account charged. If the
+                            Purchaser has already been charged for the purchase
+                            and the order is cancelled, G2MC shall issue a
+                            credit to the credit card or PayPal account used to
+                            make the purchase in the amount of the incorrect
+                            price (plus any taxes and / or shipping or other
+                            fees).
+                          </p>
+                          <p>
+                            If you have a valid promotional code, it shall be
+                            applied and displayed during the checkout process
+                            once you enter the code. In the event that an
+                            incorrect discount is applied, G2MC reserves the
+                            right to refuse or cancel any orders listed at an
+                            incorrect discount. G2MC reserves the right to
+                            refuse or cancel any such orders whether or not the
+                            purchase has been confirmed and the Purchaser’s
+                            credit card charged.
+                          </p>
+                          <p>
+                            Please note that G2MC gift certificates are not
+                            accepted for payment through the Services; they are
+                            only accepted in our retail locations.
+                          </p>
+                          <h4>c. Billing Information and Payment Processing</h4>
+                          <p>
+                            In order to make a purchase of Products through the
+                            Services, you will be required to enter the credit
+                            card holder name, credit card number, credit card
+                            expiry date, card security code (CVV), and billing
+                            address if different from your delivery address.
+                            This may be referred to in these TOU or the Privacy
+                            Policy as “<strong>Billing Information</strong>”.
+                            Your Billing Information must match the information
+                            associated with your credit card or PayPal account
+                            (as applicable) for the payment to be processed. In
+                            addition to the Billing Information, you must
+                            provide a telephone number and email address so that
+                            we can communicate with you about your order.
+                          </p>
+                          <p>
+                            All payments for Products made through the Services
+                            are processed using a secure https:// connection,
+                            and payment processing is handled through “<strong
+                              >Third-Party Payment Processors</strong
+                            >”, currently
+                            <a
+                              href="https://stripe.com/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Stripe</a
+                            >
+                            and<a
+                              href="https://www.paypal.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              PayPal</a
+                            >, though these are subject to change without
+                            notice. The Third-Party Payment Processors currently
+                            accept certain credit and debit cards (which shall
+                            be displayed to you upon making your payment) as
+                            payment options (as well as your PayPal account) but
+                            these are subject to change without notice. Once
+                            transactions are accepted by a Third-Party Payment
+                            Processor, they are processed in accordance with
+                            their program rules and procedures and Terms of Use.
+                            G2MC and the Third-Party Payment Processors are
+                            unaffiliated companies and G2MC has no influence on
+                            the operations of the Payment Processors. G2MC and /
+                            or its Representatives shall in no way be held
+                            responsible for any losses or damages, direct or
+                            indirect, pecuniary or otherwise, resulting from any
+                            error or failure on the part of the Third-Party
+                            Payment Processors.
+                          </p>
+                          <p>
+                            All Billing Information is collected by the
+                            Third-Party Payment Processors, on their own secured
+                            servers. G2MC does not have access to any credit
+                            card information, nor can it be responsible for any
+                            breach of information caused by faulty programming
+                            or malicious users on the servers of the Third-Party
+                            Payment Processors. Non-financial information will,
+                            however, be available to G2MC for shipping and
+                            data-keeping purposes.
+                          </p>
+                          <h4>d. Shipping and Delivery</h4>
+                          <p>
+                            Delivery of Products is only available to certain
+                            provinces and locations, as will be displayed to you
+                            upon checkout. Depending on the circumstances and
+                            the method chosen, delivery may be made by
+                            third-party delivery services Canada Post and FedEx
+                            (the “<strong>Third-Party Delivery Services</strong
+                            >”). G2MC shall in no way be held responsible for
+                            any damages resulting from any error or failure on
+                            the part of Third-Party Delivery Services. Risk of
+                            loss, damage or destruction shall pass to Purchaser
+                            upon delivery, except as provided for in the next
+                            section of these TOU.
+                          </p>
+                          <p>
+                            Details of shipping and delivery can be found in
+                            G2MC’s Shipping and Delivery Policy, which is
+                            incorporated by reference into these TOU.
+                          </p>
+                          <h3>
+                            6. Policies and Warranties for Purchase of Products
+                            Online
+                          </h3>
+                          <h4>a. Return and Exchange Policy</h4>
+                          <p>
+                            G2MC is committed to your full customer
+                            satisfaction. If your purchase of Products does not
+                            meet your expectations, if the Product is defective
+                            or damaged, we will be pleased to accept return of
+                            your Product or exchange it, if it meets the
+                            following conditions:
+                          </p>
+                          <p>
+                            (i)     The Product is returned within 7 working
+                            days following delivery or pickup;
+                          </p>
+                          <p>
+                            (ii)     The Product is in its original state,
+                            unused, not modified and not washed; and
+                          </p>
+                          <p>
+                            (iii)     The Product is in its original packaging
+                            with all its labels still attached.
+                          </p>
+                          <p>
+                            To begin the return process, please
+                            <a
+                              href="/cdn-cgi/l/email-protection#056c6b636a456d6a6860766a666c6071602b6664"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >contact customer service</a
+                            >
+                            within three working days of delivery of your
+                            Products so that we may assist you. Please note that
+                            we may ask you for pictures of the Product(s) you
+                            wish to return.
+                          </p>
+                          <p>
+                            The following Products may not be returned or
+                            exchanged: made-to-measure or customized Products,
+                            Products marked as “final sale”, mattresses, duvets,
+                            bedding, pillows and cushions. Returns and exchanges
+                            shall also not be possible on Products removed from
+                            their original packaging or that were accepted “as
+                            is” following installation by one of our experts or
+                            at pickup at our warehouse.
+                          </p>
+                          <p>
+                            G2MC reserves the right to refuse any return or
+                            exchange which do not conform to this section of the
+                            TOU. When you return a Product, your refund will be
+                            issued according to the next section of these TOU.
+                          </p>
+                          <h4>b. Refunds</h4>
+                          <p>
+                            All refunds will be issued within seven working days
+                            following our receipt of the returned Product. Your
+                            refund will be issued to the same credit card or
+                            other payment method used to make the purchase, less
+                            the delivery fees (where applicable).
+                          </p>
+                          <p>
+                            If your Product is defective, the cost of returning
+                            the Product will be borne by G2MC. If the defective
+                            Product is not replaceable and was the only Product
+                            of your original order, G2MC will refund your
+                            delivery fees of the original order.
+                          </p>
+                          <p>
+                            You will be notified by email when the refund has
+                            been processed. Please note your financial
+                            institution may require additional processing time
+                            to credit your account.
+                          </p>
+                          <h4>c. Cancellation</h4>
+                          <p>
+                            You may cancel your order of Product(s) if the order
+                            has not yet been shipped. If you wish to cancel your
+                            order, please
+                            <a
+                              href="/cdn-cgi/l/email-protection#93fafdf5fcd3fbfcfef6e0fcf0faf6e7f6bdf0f2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >contact customer service</a
+                            >
+                            to confirm the cancellation of your order, prior to
+                            receiving our email that your order has been
+                            shipped.
+                          </p>
+                          <h4>d. Warranty</h4>
+                          <p>
+                            Products are covered for one year by a
+                            manufacturer’s warranty covering manufacturing
+                            defects. The warranty shall only apply for normal
+                            household use of the Product and shall not cover any
+                            defects resulting from negligence, any incident
+                            causing damage, abnormal use or commercial use.
+                          </p>
+                          <p>
+                            The warranty is non-transferable if you resell the
+                            Product. The original receipt of purchase shall be
+                            required for any claim made under the warranty.
+                          </p>
+                          <h3>7. Proprietary Rights and User Content Rights</h3>
+                          <h4>a. Intellectual Property Rights</h4>
+                          <p>
+                            You acknowledge that: (a) the Services and Websites
+                            contain proprietary and confidential information
+                            that are protected by applicable intellectual
+                            property and other laws, and (b) G2MC and/or third
+                            parties (via license) own all right, title and
+                            interest in and to the Services and Websites and
+                            content that may be presented or accessed through
+                            the Services and Websites, including without
+                            limitation all Intellectual Property Rights therein
+                            and thereto. All rights not specifically granted
+                            under these TOU are reserved to G2MC and its
+                            licensors. “<strong
+                              >Intellectual Property Rights</strong
+                            >” means any and all rights existing from time to
+                            time under patent law, copyright law, trade secret
+                            law, trademark law, unfair competition law, and any
+                            and all other proprietary rights, and any and all
+                            applications, renewals, extensions and restorations
+                            thereof, now or hereafter in force and effect
+                            worldwide.
+                          </p>
+                          <p>
+                            You agree that you will not, and will not allow any
+                            third party, to (i) copy, sell, license, distribute,
+                            transfer, modify, adapt, translate, prepare
+                            derivative works from, decompile, reverse engineer,
+                            disassemble or otherwise attempt to derive source
+                            code from, the Websites or Services, or content that
+                            may be presented or accessed through the Websites or
+                            Services for any purpose, unless otherwise permitted
+                            by these TOU or the functionalities of the Services;
+                            (ii) take any action to circumvent or defeat the
+                            security deployed or enforced by any functionality
+                            contained in the Websites or Services; or (iii)
+                            remove, obscure, or alter G2MC’s or any third
+                            party’s copyright notices, trademarks, or other
+                            proprietary rights notices affixed to or contained
+                            within or accessed in conjunction with or through
+                            the Websites or Services.
+                          </p>
+                          <p>
+                            The content, arrangement and layout of the Websites
+                            and Services, including but not limited to the
+                            trademarks, photos, logos, videos, audio, images,
+                            text (in the form of plain text, HTML, or PDFs) and
+                            Computer Code are proprietary to G2MC, either owned
+                            or under license, and may not be copied, imitated,
+                            reproduced, displayed, distributed, transmitted,
+                            decompiled or otherwise used without the express
+                            permission of G2MC, or as permitted by the
+                            functionality of the Services or these TOU. Any
+                            unauthorized use of the content, arrangement or
+                            layout of the Websites or Services, Computer Code,
+                            images, logos, videos, audio or trademarks found in
+                            the Websites or Services or any portion of or
+                            derivative works thereof may violate civil or
+                            criminal laws, including but not limited to
+                            intellectual property laws, and G2MC may take action
+                            accordingly.
+                          </p>
+                          <p>
+                            The above paragraph further applies to third party
+                            property used as part of the Services or Websites,
+                            including but not limited to third party Computer
+                            Code. For the purposes of the present section,
+                            “<strong>Computer Code</strong>” includes but is not
+                            limited to source code in any programming language,
+                            object code, frameworks, CSS, PHP, JavaScript or
+                            similar files, templates, modules, or any similar
+                            files, and related documentation.
+                          </p>
+                          <h4>b. Submitted Information</h4>
+                          <p>
+                            If you choose to communicate to G2MC (via any means)
+                            suggestions for improvements to any of the Websites
+                            or Services or G2MC’s Products or business generally
+                            (collectively, “<strong>Feedback</strong>”), G2MC
+                            shall own all right, title, and interest in and to
+                            the Feedback and will be entitled to use the
+                            Feedback without restriction. You hereby irrevocably
+                            assign all right, title and interest in and to the
+                            Feedback to G2MC and waive in favor of G2MC, its
+                            successors and assigns all your moral rights in the
+                            Feedback, and agree to provide G2MC such assistance
+                            as G2MC may require to document, perfect, and
+                            maintain G2MC’s rights to the Feedback. You
+                            acknowledge and agree that, by providing any
+                            Feedback to G2MC, you are not entitled to any
+                            compensation or reimbursement of any kind from G2MC
+                            under any circumstances.
+                          </p>
+                          <h4>c. User Content</h4>
+                          <p>
+                            As a User, you may use the Services to create and
+                            submit text, including but not limited to Product
+                            reviews, which may be visible to other Website
+                            visitors, Users or third parties in various ways.
+                            You may also, depending on the Website, upload
+                            certain file types including but not necessarily
+                            limited to text, photographs, graphics, video, audio
+                            or any other type of media or content, and other
+                            interactive features generated, provided, or
+                            otherwise made accessible on or through the
+                            Services. All of the foregoing shall be deemed
+                            “<strong>User Content</strong>”. By creating,
+                            submitting and / or uploading User Content, you
+                            agree to be bound by the G2MC policy for User
+                            Content as described in this section (the “<strong
+                              >User Content Policy</strong
+                            >”).
+                          </p>
+                          <p>
+                            When you submit User Content, you acknowledge and
+                            agree to the following:
+                          </p>
+                          <p>
+                            (i)     User Content submitted by you does not
+                            violate any intellectual property right or other
+                            proprietary right of a third party. Without limiting
+                            the generality of the foregoing, you acknowledge
+                            that any User Content submitted is your own original
+                            works, or works for which you have been granted a
+                            valid license to reproduce or display. You affirm,
+                            represent and warrant that: (1) you own or have the
+                            necessary licenses, rights, consents, and
+                            permissions to use and authorize G2MC to use all
+                            intellectual property rights and other proprietary
+                            rights in and to the User Content (or the individual
+                            constituent elements thereof) as set out herein; and
+                            (2) have all necessary consents to collect, use and
+                            disclose any personally identifiable information and
+                            images (of yourself or third parties) contained or
+                            displayed in the User Content to enable inclusion
+                            and use of the User Content in the manner
+                            contemplated by the Services and these TOU;
+                          </p>
+                          <p>
+                            (ii)     You retain all of your ownership rights in
+                            the User Content you submit. However, by submitting
+                            User Content to G2MC, you hereby grant G2MC a
+                            worldwide, non-exclusive, royalty-free,
+                            sublicenseable and transferable license to use,
+                            edit, translate, reproduce, distribute, display, and
+                            / or perform and otherwise fully exploit the User
+                            Content in connection with the Websites and Services
+                            and / or G2MC&#8217;s (and its successors&#8217; and
+                            affiliates&#8217;) business or activities, including
+                            without limitation for promoting and redistributing
+                            part or all of the Websites or Services (and
+                            derivative works thereof) in any media formats and
+                            through any media channels without any compensation
+                            to you. You understand and agree that G2MC may
+                            retain, but not display or distribute, server copies
+                            of User Content that have been removed or deleted;
+                          </p>
+                          <p>
+                            (iii)     You also hereby waive any moral rights you
+                            may have in your User Content and grant other
+                            visitors or Users of the Websites or Services a
+                            non-exclusive license to access your User Content,
+                            and to use, reproduce, distribute, display and / or
+                            perform such User Content as permitted through the
+                            functionality of the Services and under these TOU;
+                          </p>
+                          <p>
+                            (iv)     The licenses granted by you in the previous
+                            two paragraphs in regards the User Content are
+                            perpetual and irrevocable, and apply throughout the
+                            world and in any and all media as applicable;
+                          </p>
+                          <p>
+                            (v)     You will not upload any User Content that is
+                            unlawful, such as User Content that is threatening,
+                            abusive, harassing, defamatory, libelous,
+                            fraudulent, invasive of another’s privacy, or
+                            otherwise tortuous. Furthermore, you will not upload
+                            any User Content that is racist, sexist, homophobic,
+                            or otherwise offensive to any minority or group;
+                            contains any adult content or political militancy;
+                            or upload any User Content that contains any
+                            viruses, commercial solicitations, mass mailing,
+                            chain mailing or any other form of spam;
+                          </p>
+                          <p>
+                            (vi)     You will not include in User Content links
+                            to any third-party website that is a spam or
+                            phishing website, to any website that sells goods or
+                            services, or to any website that may violate any
+                            applicable law.
+                          </p>
+                          <p>
+                            Where you are accessing or downloading User Content
+                            of a User, you acknowledge that any use of User
+                            Content accessed or downloaded by you while using
+                            the Services is at your own risk and you will be
+                            solely responsible for any damage or loss to you or
+                            any third party arising therefrom, and G2MC
+                            disclaims any responsibility in this regard.
+                          </p>
+                          <p>
+                            If you as a Website visitor or Services User believe
+                            that a User has posted User Content that violates
+                            these TOU, please contact us at
+                            <a
+                              href="/cdn-cgi/l/email-protection#523b3c343d1235603f317c3133"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              ><span
+                                class="__cf_email__"
+                                data-cfemail="a3cacdc5cce3c491cec08dc0c2"
+                                >[email&#160;protected]</span
+                              ></a
+                            >
+                            so that we may conduct an inquiry. G2MC retains
+                            absolute discretion whether to remove or modify any
+                            User Content or take any other action pursuant to
+                            your report.
+                          </p>
+                          <p>
+                            Depending on the Website, User Content may or may
+                            not be edited, curated or otherwise modified or
+                            checked by G2MC prior to posting. G2MC reserves the
+                            right, in its sole discretion, to refuse to display
+                            any User Content, or to remove or modify immediately
+                            and without notice any User Content that violates
+                            the User Content Policy.
+                          </p>
+                          <p>
+                            G2MC and its Representatives will not be held liable
+                            for any damages, pecuniary or otherwise, to you or
+                            any third party arising from your submission or use
+                            of User Content, whether it violates the User
+                            Content Policy or not, or our removal or
+                            modification thereof, and disclaims any
+                            responsibility in this regard.
+                          </p>
+                          <h3>8. Interruption of Service</h3>
+                          <p>
+                            From time to time, any of the Websites, or the
+                            Services (or any portion thereof), may be
+                            unavailable for brief periods of time for
+                            maintenance and / or modifications to the Websites
+                            or Services. While we will endeavour to make this
+                            unavailability as brief as possible, G2MC and its
+                            Representatives shall not be held liable for any
+                            losses or damages, direct or indirect, pecuniary or
+                            non-pecuniary, resulting from the interruption of
+                            the normal functioning of the Websites or Services,
+                            and disclaims any responsibility thereto.
+                          </p>
+                          <h3>
+                            9. Suspension or Termination of your Account;
+                            Termination of the Services and the TOU
+                          </h3>
+                          <p>
+                            You agree that G2MC, in their sole discretion, with
+                            or without cause, has the right (but not the
+                            obligation) to block your IP address, revoke your
+                            account credentials, or otherwise suspend or
+                            terminate your access to or use of the Websites and
+                            / or Services (or any portion thereof), immediately
+                            and without notice, for any reason, including,
+                            without limitation, if G2MC believes that you have
+                            acted inconsistently with the letter or spirit of
+                            the TOU or the Privacy Policy, or have violated any
+                            other posted policy.
+                          </p>
+                          <p>
+                            G2MC may also, in their sole discretion and at any
+                            time, discontinue providing any of the Websites and
+                            / or Services, or any portion thereof, with or
+                            without notice. You agree that G2MC shall not be
+                            liable to you or any third party for any losses or
+                            damages, pecuniary or non-pecuniary, resulting from
+                            termination of your access to the Websites or
+                            Services, or from G2MC’s termination of the
+                            Website(s) and / or Services or any part thereof.
+                          </p>
+                          <p>
+                            Termination of the Websites and / or Services or
+                            your access to the Websites and / or Services shall
+                            terminate the present TOU as between you and G2MC.
+                            All provisions of these TOU which by their nature
+                            should survive termination of these TOU shall
+                            survive termination, including without limitation,
+                            intellectual property provisions, disclaimers,
+                            indemnity and limitations of liability.
+                          </p>
+                          <h3>10. External Links</h3>
+                          <h4>a. General External Links</h4>
+                          <p>
+                            From time to time G2MC may provide links to other
+                            websites or services. Links from the Websites or
+                            Services may take you to websites or services not
+                            covered by these TOU. When you access third-party
+                            resources on the Internet in this manner, you do so
+                            at your own risk. G2MC provides those links as a
+                            convenience to you and G2MC takes no responsibility
+                            for your use of those other websites or services or
+                            protection of your privacy (including collection of
+                            your personal information) on those other websites
+                            or services. We encourage you to check the Terms of
+                            Use and / or Privacy Policy of any website or
+                            service you visit. G2MC does not make any claim or
+                            warranty whatsoever about the content of those
+                            websites or services to which we link, or any
+                            products or services available through those
+                            websites (whether for free or for purchase) or the
+                            third parties operating those websites.
+                          </p>
+                          <p>
+                            In no way will G2MC or its Representatives be held
+                            responsible for any damages, direct or indirect,
+                            pecuniary or non-pecuniary: (1) for your use of
+                            websites or other services that may be linked to
+                            from the Websites or Services or the information
+                            thereon; (2) for any virus, Trojan horse, worm or
+                            other similar destructive file received as a result
+                            of your use of those websites or services; (3)
+                            caused by or in connection with, use of or reliance
+                            on any content, or products or services (whether
+                            free or for purchase) available on or through any
+                            linked-to website or service; or (4) for the actions
+                            of the operators of any such website or service.
+                          </p>
+                          <h4>b. Use of Google Maps</h4>
+                          <p>
+                            The Websites and Services make use of the Google
+                            Maps Platform, and when you use the Websites or
+                            Services Google Maps may be opened from a link on a
+                            Website. Your use of Google Maps on a Website or on
+                            its own is subject to the current Google Maps/Google
+                            Earth Additional Terms of Service at<a
+                              href="https://maps.google.com/help/terms_maps.html"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              https://maps.google.com/help/terms_maps.html</a
+                            >
+                            and Google Privacy Policy at<a
+                              href="https://policies.google.com/privacy"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              https://policies.google.com/privacy</a
+                            >, which we encourage you to read.
+                          </p>
+                          <h3>11. Disclaimer of Warranties</h3>
+                          <p>
+                            You expressly understand and agree that your use of
+                            the Websites or Services, the information or
+                            material thereon (whether provided by G2MC or third
+                            parties) or any activity arising from your use of
+                            the Websites or Services or the information thereon
+                            (including but not limited to your use of a
+                            purchased Product) or the materials streamed or
+                            downloaded therefrom is at your sole risk. The
+                            Websites and Services, any materials downloaded
+                            therefrom, or any third party materials, are
+                            provided on an &#8220;as is&#8221; and &#8220;as
+                            available&#8221; basis, and you will be solely
+                            responsible for any damage to your computer or
+                            device or loss of data that results from the
+                            download or access of any material obtained through
+                            the use of the Websites or Services or any other
+                            functionalities of the Services, or losses or
+                            damages (pecuniary or otherwise) resulting from (i)
+                            your use of the Websites or Services, the
+                            information thereon, any materials downloaded
+                            therefrom, or (ii) any activity arising from the use
+                            of the Websites or Services or the information
+                            thereon (including but not limited to your use of a
+                            purchased Product) or any materials downloaded
+                            therefrom.
+                          </p>
+                          <p>
+                            The information or resources provided on the
+                            Websites or through the Services, written or
+                            produced by G2MC staff, freelance writers or other
+                            subcontractors are known to be as accurate as
+                            possible at the time of writing or production, and
+                            every effort has been made to ensure that the
+                            information from the Services is as accurate and
+                            up-to-date as possible. However, certain information
+                            may change, and errors or omissions may occur, and
+                            G2MC and / or its Representatives shall not be
+                            responsible for any loss or damage, financial or
+                            otherwise, resulting from changes or errors in
+                            information, or any omission, on the Websites or
+                            Services.
+                          </p>
+                          <p>
+                            Except as provided for in the warranties for
+                            Products, G2MC expressly disclaims all warranties of
+                            any kind, whether express or implied, including but
+                            not limited to: warranties of title and
+                            non-infringement; warranties that the Websites or
+                            Services, the information thereon or any materials
+                            downloaded therefrom, and any third-party materials
+                            will be uninterrupted, error-free, accurate,
+                            reliable and free from virus and other harmful
+                            components; and the implied warranties of
+                            merchantability and fitness for a particular
+                            purpose. G2MC and its Representatives do not warrant
+                            that: (i) the Websites and Services will be secure
+                            or available at any particular time or location;
+                            (ii) any defects or errors or omissions will be
+                            corrected; (iii) any content or software available
+                            at or through the Websites or Services is free of
+                            viruses or other harmful components; (iv)
+                            functionalities of the Services will work equally in
+                            desktop and device environments; or (v) the results
+                            of using the Websites or Services, or any activity
+                            arising therefrom (including but not limited to your
+                            use of a purchased Product), or any content
+                            downloaded therefrom will meet your requirements.
+                          </p>
+                          <h3>12. Limitation of Liability</h3>
+                          <p>
+                            G2MC shall not be liable and assumes no
+                            responsibility for any loss or damages arising from
+                            or relating to the information available through the
+                            Websites or Services or downloaded therefrom, the
+                            use of the Websites or Services, activities arising
+                            from your use of the Services (including but not
+                            limited to your use of a purchased Product), or any
+                            third-party materials on the Websites or available
+                            through the Services.
+                          </p>
+                          <p>
+                            To the maximum extent permitted by law, in no event
+                            will G2MC or it Representatives: be liable for any
+                            indirect, incidental, extraordinary, consequential,
+                            special, punitive or exemplary damages (including,
+                            without limitation, loss of revenue or profits, lost
+                            or damaged data, loss of use, business interruption
+                            or any other pecuniary loss), arising out of or
+                            relating to the Websites or Services or your use,
+                            misuse or inability to use the Websites or Services,
+                            even if G2MC has been advised of the possibility of
+                            such damages. This limitation of liability will
+                            apply regardless of the form of action, whether in
+                            contract, warranty, tort, negligence, strict
+                            liability or under any other legal theory.
+                          </p>
+                          <h3>13. Indemnity</h3>
+                          <p>
+                            Notwithstanding any other term of the TOU or any act
+                            or failure to act by G2MC or its Representatives,
+                            you agree to indemnify, defend and hold harmless
+                            G2MC and its Representatives, or its affiliates and
+                            their Representatives, from and against any damages,
+                            liabilities, costs and expenses (including
+                            attorneys’ fees), claims or demands, arising out of
+                            (i) your use of or connection to the Websites or
+                            Services or the information thereon or information
+                            or materials downloaded therefrom; (ii) your
+                            participation in any activities arising from the
+                            Services (including but not limited to your use of a
+                            purchased Product), the information thereon or
+                            information or materials downloaded therefrom; (iii)
+                            your violation of, or failure to perform your
+                            obligations under the TOU or the Privacy Policy; or
+                            (iv) your violation of any rights of a third party.
+                          </p>
+                          <h3>14. Governing Laws and Jurisdiction</h3>
+                          <p>
+                            These TOU, and your use of the Websites and Services
+                            shall be governed by and construed in accordance
+                            with the laws of the Province of Quebec, Canada and
+                            the Federal laws of Canada applicable therein in
+                            force at the time without regard to conflict of law
+                            provisions. Without limiting the generality of the
+                            foregoing governing law, G2MC’s practises with
+                            respect to the purchase of Products online are
+                            designed to be in conformity with Quebec’s
+                            <em>Consumer Protection Act</em> (R.S.Q. c. P-40.1),
+                            and its related regulations.
+                          </p>
+                          <p>
+                            You agree that any legal action or proceeding
+                            between you and G2MC shall be brought exclusively in
+                            the courts located in the Judicial District of
+                            Montreal, Canada. Notwithstanding the foregoing,
+                            G2MC shall have the right to bring action against
+                            you in courts of competent jurisdiction in the
+                            jurisdiction in which you reside or are located: (i)
+                            to seek injunctive relief against you; (ii) to
+                            obtain a judgment against you where a judgment by
+                            the Montreal court will, or may not be, enforced by
+                            the jurisdiction in which you reside or are located;
+                            or (iii) to enforce in your jurisdiction a judgment
+                            obtained against you in the Montreal court.
+                          </p>
+                          <h3>15. Miscellaneous Provisions</h3>
+                          <p>
+                            (i)     The TOU, and any and all policies and terms
+                            incorporated by reference therein, in conjunction
+                            with the Privacy Policy, constitute the entire
+                            agreement between you and G2MC with respect to your
+                            use of the Websites and Services, superseding any
+                            prior agreements between you and G2MC, its
+                            predecessors, affiliates or subsidiaries. Your use
+                            of certain aspects of the Websites or Services may
+                            be subject to certain third-party terms or privacy
+                            policies, as described elsewhere in these TOU.
+                          </p>
+                          <p>
+                            (ii)     G2MC shall not be liable for any failure to
+                            perform its obligations under the present TOU where
+                            such failure results from any cause beyond G2MC’s
+                            reasonable control, including, but not limited to,
+                            mechanical, electronic or communications failure or
+                            degradation, or any force majeure event.
+                          </p>
+                          <p>
+                            (iii)     If any provision of the TOU or Privacy
+                            Policy is found by a court of competent jurisdiction
+                            to be invalid, the parties nevertheless agree that
+                            the court should endeavour to give effect to the
+                            parties&#8217; intentions as reflected in the
+                            provision, and the other provisions of the TOU or
+                            Privacy Policy, as the case may be, shall remain in
+                            full force and effect.
+                          </p>
+                          <p>
+                            (iv)     The failure of G2MC to exercise or enforce
+                            any right or provision of these TOU does not
+                            constitute a waiver of such right or provision,
+                            which will still be available to G2MC.
+                          </p>
+                          <p>
+                            (v)     The section titles in the TOU and Privacy
+                            Policy are for convenience only and have no legal or
+                            contractual effect.
+                          </p>
+                          <p>
+                            (vi)     The parties acknowledge having expressly
+                            required that these TOU and the Privacy Policy are
+                            to be drawn up in the English language.
+                            <em
+                              >Les parties aux présentes reconnaissent avoir
+                              expressément exigé que les présentes Conditions
+                              d’utilisation et la Politique de confidentialité
+                              soient rédigées en anglais.</em
+                            >
+                          </p>
+                          <p>© G2MC 2019–2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <ul
+                id="menu-social"
+                class="c-contact_socials"
+                aria-label="Social Media"
+              >
+                <li class="c-contact_socials_item menu-item menu-item-facebook">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://www.facebook.com/Home-Société-349660795676698/"
+                    ><span class="u-screen-reader-text">Facebook</span
+                    ><svg aria-hidden="true" role="img">
+                      <use
+                        href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#facebook"
+                        xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#facebook"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li
+                  class="c-contact_socials_item menu-item menu-item-instagram"
+                >
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://www.instagram.com/home_societe/"
+                    ><span class="u-screen-reader-text">Instagram</span
+                    ><svg aria-hidden="true" role="img">
+                      <use
+                        href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#instagram"
+                        xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#instagram"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li class="c-contact_socials_item menu-item menu-item-linkedin">
+                  <a
+                    class=""
+                    target="_blank"
+                    href="https://www.linkedin.com/company/18918687/admin/"
+                    ><span class="u-screen-reader-text">LinkedIn</span
+                    ><svg aria-hidden="true" role="img">
+                      <use
+                        href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#linkedin"
+                        xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#linkedin"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
+              <p class="c-block-content_label">Contact</p>
+            </div>
+          </div>
+
+          <div class="o-scroll_section">
+            <div class="c-end">
+              <div
+                class="c-end_item js-animate"
+                data-speed="2"
+                data-delay="0.05"
+                data-horizontal=""
+                data-position="bottom"
+              >
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                  ></use>
+                </svg>
+              </div>
+              <div
+                class="c-end_item js-animate"
+                data-speed="3"
+                data-delay="0.05"
+                data-horizontal=""
+                data-position="bottom"
+              >
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                  ></use>
+                </svg>
+              </div>
+              <div
+                class="c-end_item js-animate"
+                data-speed="4"
+                data-delay="0.05"
+                data-horizontal=""
+                data-position="bottom"
+              >
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                  ></use>
+                </svg>
+              </div>
+              <div
+                class="c-end_item js-animate"
+                data-speed="5"
+                data-delay="0.05"
+                data-horizontal=""
+                data-position="bottom"
+              >
+                <svg aria-hidden="true" role="img">
+                  <use
+                    href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                    xlink:href="https://homesociete.ca/themes/homesociete/dist/images/sprite.svg#logo"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../ajax/libs/jquery/3.3.1/jquery.min.js"
+      id="jquery-js"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="https://homesociete.ca/themes/homesociete/dist/scripts/jquery.min.js"><\/script>'
+        );
+    </script>
+    <script
+      type="text/javascript"
+      src="../../themes/homesociete/dist/scripts/vendors.js?ver=202106230936"
+      id="sage/vendors.js-js"
+    ></script>
+    <script type="text/javascript" id="sage/app.js-js-extra">
+      /* <![CDATA[ */
+      var hsData = {
+        ajaxUrl: "\/wordpress\/wp-admin\/admin-ajax.php",
+        spriteUrl:
+          "https:\/\/homesociete.ca\/themes\/homesociete\/dist\/images\/sprite.svg",
+        loaderUrl:
+          "http:\/\/edgi-local.com\/themes\/homesociete\/resources\/assets\/jsons\/loader.json",
+        l10n: {
+          errorTryAgain: "An error occurred. Please try again.",
+          errorTryLater: "An error occurred. Please try later.",
+          unknownError: "Something went wrong.",
+        },
+        recaptcha: { siteKey: "6Leiv5cUAAAAADJzrKq3_Nqsmq75Qm-bQaZ5UKDf" },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../../themes/homesociete/dist/scripts/app.js?ver=202106230936"
+      id="sage/app.js-js"
+    ></script>
+
+    <script>
+      // var iterator = 0;
+      // var scripts = [
+      //     'https://homesociete.ca/themes/homesociete/dist/scripts/vendors.js',
+      //     'https://homesociete.ca/themes/homesociete/dist/scripts/app.js'
+      // ];
+
+      // function dynamicallyLoadScript(url) {
+
+      //     var script = document.createElement('script');
+      //     script.type= 'text/javascript';
+      //     script.src = url;
+      //     document.body.appendChild(script);
+
+      //     script.onload = function() {
+      //         if(iterator < scripts.length - 1) {
+      //             iterator++;
+      //             dynamicallyLoadScript(scripts[iterator]);
+      //         }
+      //     }
+      // }
+
+      // window.onload = function(e) {
+      //     dynamicallyLoadScript(scripts[iterator]);
+      // }
+    </script>
+  </body>
+</html>
