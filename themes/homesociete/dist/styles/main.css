@@ -375,11 +375,165 @@ button:hover {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-ThinItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-LightItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-XLight.woff2") format("woff2"),
+    url("../fonts/Gotham-XLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.woff2") format("woff2"),
+    url("../fonts/Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.woff2") format("woff2"),
+    url("../fonts/Gotham-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2"),
+    url("../fonts/Gotham-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Thin.woff2") format("woff2"),
+    url("../fonts/Gotham-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-UltraItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-UltraItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-BookItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-BookItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("../fonts/Gotham-Medium.woff2") format("woff2"),
+    url("../fonts/Gotham-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Bold.woff2") format("woff2"),
+    url("../fonts/Gotham-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-BookItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-BookItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Light.woff2") format("woff2"),
+    url("../fonts/Gotham-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Black.woff2") format("woff2"),
+    url("../fonts/Gotham-Black.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-XLightItalic.woff2") format("woff2"),
+    url("../fonts/Gotham-XLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   overflow-y: scroll;
   min-height: 100%;
   color: #222;
-  font-family: NeueHaasGroteskDisp Pro;
+  /* font-family: NeueHaasGroteskDisp Pro; */
+  font-family: Gotham;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -2214,7 +2368,8 @@ button.swiper-pagination-bullet {
   width: 300px;
   display: inline-block;
   vertical-align: top;
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
+  padding: 1rem 2.5rem;
   white-space: normal;
   margin: 0;
   opacity: 0;
@@ -2263,7 +2418,8 @@ button.swiper-pagination-bullet {
 
 .c-home-intro_lines {
   display: inline-block;
-  width: 162vh;
+  /* width: 162vh; */
+  width: 165vh;
 }
 
 @media (min-width: 1000px) {
@@ -2282,10 +2438,11 @@ button.swiper-pagination-bullet {
 .c-home-intro_lines_item {
   text-align: center;
   line-height: 1.1;
-  font-family: GT Super Display;
+  /* font-family: GT Super Display; */
+  font-family: Gotham Light;
   text-transform: uppercase;
   /* font-size: 36vh; */
-  font-size: 25vh;
+  font-size: 23vh;
 }
 
 .c-home-intro_lines_item:first-child {
@@ -2441,7 +2598,8 @@ button.swiper-pagination-bullet {
 
 .c-home-intro_logo svg {
   display: block;
-  width: 40vh;
+  /* width: 40vh; */
+  width: 28vh;
 }
 
 .c-header_wrapper {
@@ -2544,9 +2702,11 @@ button.swiper-pagination-bullet {
 .c-header_menu {
   padding: 0;
   list-style: none;
-  border-bottom: 1px solid #aaa;
-  font-size: 0.875rem;
-  margin: 2.5rem;
+  /* border-bottom: 1px solid #aaa; */
+  border-bottom: 3px solid #000;
+  font-size: 0.6rem;
+  /* margin: 2.5rem; */
+  margin: 1rem;
 }
 
 .c-header.-sticky .c-header_menu {
@@ -2612,6 +2772,9 @@ button.swiper-pagination-bullet {
 
 .c-header_menu_item {
   display: inline-block;
+  font-family: Gotham;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .c-header_menu_item a,
@@ -2621,7 +2784,7 @@ button.swiper-pagination-bullet {
   padding: 1.25rem 0;
   margin: 0 1.25rem;
   color: #1e1e1e;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .c-header_menu_item a:before,
@@ -2731,10 +2894,12 @@ html.is-ie .c-header_menu_item button:hover:before {
 .c-header_logo {
   position: absolute;
   top: 50%;
-  right: 2.5rem;
+  /* right: 2.5rem; */
+  right: -2rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 11.25rem;
+  /* width: 11.25rem; */
+  width: 10rem;
   height: 2.5rem;
   color: #1e1e1e;
   display: block;
@@ -2845,7 +3010,8 @@ html.is-ie .c-header_menu_item button:hover:before {
 .c-promo_image_wrapper {
   overflow: hidden;
   width: 100%;
-  height: calc(100vh - 250px);
+  /* height: calc(100vh - 250px); */
+  height: calc(100vh - 150px);
   position: relative;
   z-index: 5;
 }
@@ -4982,10 +5148,11 @@ a.c-brand_logo:hover {
 }
 
 .c-block-content_summary {
-  /* font-size: 2.5vw; */
-  font-size: 2vw;
-  font-family: GT Super Display;
-  line-height: 1.1;
+  font-size: 2.8vw;
+  /* font-family: GT Super Display; */
+  font-family: Gotham;
+  font-weight: 300;
+  line-height: 1;
   opacity: 0;
   -webkit-transform: translateY(60px);
   transform: translateY(60px);
@@ -5035,7 +5202,8 @@ a.c-brand_logo:hover {
 
 @media (min-width: 1000px) {
   .c-block-content_summary {
-    width: 75%;
+    /* width: 75%; */
+    width: 95%;
   }
 }
 
@@ -5054,8 +5222,10 @@ a.c-brand_logo:hover {
 @media (min-width: 1000px) {
   .c-block-content_footer {
     position: absolute;
-    bottom: 7.5rem;
-    width: 50%;
+    /* bottom: 7.5rem; */
+    bottom: 1.3rem;
+    /* width: 50%; */
+    width: 100%;
   }
 }
 
@@ -5067,7 +5237,8 @@ a.c-brand_logo:hover {
 
 .c-block-content_text {
   display: block;
-  max-width: 320px;
+  /* max-width: 320px; */
+  max-width: 90%;
   opacity: 0;
   -webkit-transform: translateY(60px);
   transform: translateY(60px);
@@ -5666,7 +5837,11 @@ a.c-brand_logo:hover {
 
 .u-text {
   color: #aaa;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
+  font-size: 1.2rem;
+}
+.c-block-content_footer .c-block-content_text.u-text {
+  font-size: 0.9rem;
 }
 
 @media (max-width: 699px) {

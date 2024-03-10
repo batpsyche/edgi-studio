@@ -7236,7 +7236,7 @@ var app = (function (exports) {
       Popup: _default$i,
       Job: _default$j,
       Page: _default$k,
-      Carousel: _default$l,
+      // Carousel: _default$l,
       Memo: _default$m,
       Event: _default$n,
     }),
