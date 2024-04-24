@@ -2594,6 +2594,7 @@ button.swiper-pagination-bullet {
 .c-home-intro_logo {
   height: 50%;
   margin-top: -0.25em;
+  width: 80%;
 }
 
 .c-home-intro_logo svg {
@@ -2704,7 +2705,7 @@ button.swiper-pagination-bullet {
   list-style: none;
   /* border-bottom: 1px solid #aaa; */
   border-bottom: 3px solid #000;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   /* margin: 2.5rem; */
   margin: 1rem;
 }
@@ -2781,8 +2782,10 @@ button.swiper-pagination-bullet {
 .c-header_menu_item button {
   position: relative;
   display: block;
-  padding: 1.25rem 0;
-  margin: 0 1.25rem;
+  /* padding: 1.25rem 0;
+  margin: 0 1.25rem; */
+  padding: 1rem 0;
+  margin: 0 1rem;
   color: #1e1e1e;
   line-height: 1.5;
 }
@@ -2893,14 +2896,14 @@ html.is-ie .c-header_menu_item button:hover:before {
 
 .c-header_logo {
   position: absolute;
-  top: 50%;
+  top: 40%;
   /* right: 2.5rem; */
-  right: -2rem;
+  right: 0.5rem;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   /* width: 11.25rem; */
   width: 10rem;
-  height: 2.5rem;
+  height: 3.5rem;
   color: #1e1e1e;
   display: block;
 }
@@ -3755,7 +3758,8 @@ html.is-ie .c-promo_arrow:hover {
 
 @media (min-width: 1600px) {
   .c-block-details {
-    width: 500px;
+    /* width: 500px; */
+    width: 430px;
   }
 }
 
@@ -3803,8 +3807,12 @@ html.is-ie .c-promo_arrow:hover {
 }
 
 @media (min-width: 1000px) {
-  .c-block-details_inner {
+  .c-block-details:first-child .c-block-details_inner {
     padding: 0 2.5rem;
+    border-left: 1px solid #aaa;
+  }
+  .c-block-details_inner {
+    padding: 3rem 2.5rem;
     border-left: 1px solid #aaa;
   }
   .c-block-details:last-child .c-block-details_inner {
@@ -3824,9 +3832,11 @@ html.is-ie .c-promo_arrow:hover {
 }
 
 .c-block-details_title {
-  font-family: GT Super Display;
-  font-weight: 400;
-  max-width: 70%;
+  /* font-family: GT Super Display; */
+  font-family: Gotham;
+  /* font-weight: 400; */
+  font-weight: 300;
+  max-width: 100%;
   font-size: 2.5vw;
   line-height: 1.1;
   opacity: 0;
@@ -5148,7 +5158,8 @@ a.c-brand_logo:hover {
 }
 
 .c-block-content_summary {
-  font-size: 2.8vw;
+  /* font-size: 2.8vw; */
+  font-size: 2.6vw;
   /* font-family: GT Super Display; */
   font-family: Gotham;
   font-weight: 300;
@@ -5279,7 +5290,10 @@ a.c-brand_logo:hover {
 }
 
 .c-block-content_label {
-  font-size: 0.875rem;
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 0.775rem;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -6100,4 +6114,8 @@ a.c-brand_logo:hover {
   .u-45\/100\@from-medium {
     width: 45%;
   }
+}
+/* EDGI */
+.text-dim {
+  color: #939598;
 }
