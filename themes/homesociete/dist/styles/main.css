@@ -2650,6 +2650,12 @@ button.swiper-pagination-bullet {
     -webkit-transform: translate3d(-50.5%, -50%, 0) rotate(-90deg);
     transform: translate3d(-50.5%, -50%, 0) rotate(-90deg);
   }
+
+  .c-header.-sticky .c-header_logo {
+    top: 50%;
+    right: 0;
+    height: 2.5rem;
+  }
 }
 
 @media (max-width: 999px) {
@@ -6118,4 +6124,22 @@ a.c-brand_logo:hover {
 /* EDGI */
 .text-dim {
   color: #939598;
+}
+
+.c-brand-list_label {
+  font-family: Gotham;
+  text-transform: uppercase;
+  font-size: 0.775rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (min-width: 996px) {
+  /*DESKTOP*/
+  /* our services section */
+  .c-brand-list a {
+    width: 20rem;
+    white-space: initial;
+    margin: 2rem 0;
+  }
 }
