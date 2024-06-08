@@ -2498,6 +2498,7 @@ button.swiper-pagination-bullet {
   transition: transform 1.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 1.4s cubic-bezier(0.165, 0.84, 0.44, 1),
     -webkit-transform 1.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  vertical-align: middle;
 }
 
 .has-dom-loaded .c-home-intro_lines_split span {
