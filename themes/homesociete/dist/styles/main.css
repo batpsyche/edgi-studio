@@ -538,7 +538,7 @@ html {
   color: #222;
   /* font-family: NeueHaasGroteskDisp Pro; */
   font-family: Gotham;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2913,7 +2913,8 @@ html.is-ie .c-header_menu_item button:hover:before {
   transform: translateY(-50%);
   /* width: 11.25rem; */
   width: 10rem;
-  height: 3.5rem;
+  /* height: 3.5rem; */
+  height: 3rem;
   color: var(--black);
   display: block;
 }
