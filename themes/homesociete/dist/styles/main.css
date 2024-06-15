@@ -2446,17 +2446,17 @@ button.swiper-pagination-bullet {
   font-family: Gotham Light;
   text-transform: uppercase;
   /* font-size: 36vh; */
-  font-size: 23vh;
+  font-size: 22vh;
 }
 
-.c-home-intro_lines_item:first-child {
+/* .c-home-intro_lines_item:first-child {
   margin-top: -0.1em;
 }
 
 .c-home-intro_lines_item:nth-child(2),
 .c-home-intro_lines_item:nth-child(3) {
   margin-top: -0.17em;
-}
+} */
 
 [lang="fr-CA"] .c-home-intro_lines_item:nth-child(2),
 [lang="fr-CA"] .c-home-intro_lines_item:nth-child(3) {
@@ -2478,9 +2478,9 @@ button.swiper-pagination-bullet {
   }
 }
 
-.c-home-intro_lines_split {
+/* .c-home-intro_lines_split {
   overflow: hidden;
-}
+} */
 
 .c-home-intro_lines_item .c-home-intro_lines_split {
   display: inline-block;
@@ -4083,6 +4083,9 @@ html:not(.is-mobile) .c-brand-list:hover a {
   color: currentColor;
   display: block;
   padding: 1px 0;
+	font-family: Gotham;
+	font-weight: 300;
+	font-style: normal;
 }
 
 html:not(.is-mobile) .c-brand-list a:hover {
