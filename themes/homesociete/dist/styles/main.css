@@ -4075,9 +4075,13 @@ html.is-ie .c-promo_arrow:hover {
   font-size: 0;
 }
 
-html:not(.is-mobile) .c-brand-list:hover a {
+/* html:not(.is-mobile) .c-brand-list:hover a {
   opacity: 0;
 }
+
+html:not(.is-mobile) #work .c-brand-list:hover a {
+  opacity: 1;
+} */
 
 .c-brand-list a {
   color: currentColor;
@@ -4091,6 +4095,11 @@ html:not(.is-mobile) .c-brand-list:hover a {
 html:not(.is-mobile) .c-brand-list a:hover {
   opacity: 1;
   color: #fff;
+}
+
+html:not(.is-mobile) #work .c-brand-list a:hover {
+  opacity: 1;
+  color: var(--black);
 }
 
 .c-brand-list_item {
@@ -4107,6 +4116,10 @@ html:not(.is-mobile) .c-brand-list a:hover {
     transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     -webkit-transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-size: 2.5vw;
+}
+
+.c-brand-list_item.active{
+	color:var(--red);
 }
 
 .has-dom-loaded .c-brand-list_wrapper.is-show .c-brand-list_item {
@@ -6139,6 +6152,9 @@ a.c-brand_logo:hover {
 .text-dim {
   color: #939598;
 }
+.text-red{
+	color:var(--red);
+}
 
 .c-brand-list_label {
   font-family: Gotham;
@@ -6147,6 +6163,44 @@ a.c-brand_logo:hover {
   font-weight: 700;
   margin: 0;
   color: var(--red);
+}
+
+.work-filter-grid{
+	display:grid
+}
+
+.work-filter-grid .filtr-item .filtr-item-heading{
+	font-weight:300;
+	font-family: Gotham;
+	margin-bottom:0;
+}
+
+.work-filter-grid .filtr-item .filtr-item-heading span{
+	font-size: 40%;
+}
+
+.work-filter-grid .filtr-item img{
+	object-fit: cover;
+	width: 100%;
+	max-width: 250px;
+	height: 100%;
+	display: block;
+
+}
+
+#work .c-block-details{
+	width:auto;
+	position: relative;
+}
+
+#work .c-block-details_inner{
+	width:auto;
+	padding-top:0;
+	padding-bottom:0;
+}
+
+#work .c-brand-list_wrapper {
+	width:auto;
 }
 
 @media (min-width: 996px) {
@@ -6164,4 +6218,40 @@ a.c-brand_logo:hover {
   font-weight: normal;
   font-style: normal;
   color: var(--grey);
+}
+
+
+/* GRID ATTEMPT */
+.grid-container.active {
+    display: grid !important;
+    grid-template-rows: auto auto;
+		grid-auto-flow:column;
+		gap:1% 2rem;
+		justify-content: center;
+		align-items: center;
+		height:100%;
+		width:auto;
+		/* overflow-x:scroll; */
+}
+.grid-container{
+	display: none;
+}
+
+
+.grid-item{
+	width:auto;
+	height:auto;
+}
+
+.divider {
+    /* width: 1px; */
+    background-color: var(--grey);
+    align-self: stretch;
+		grid-row : span 2 / auto;
+		border-left: 1px solid #aaa;
+}
+
+/* Ensure that dividers span full height of their respective rows */
+.grid-container > .divider:nth-child(3n + 3) {
+    grid-column: span 1;
 }
