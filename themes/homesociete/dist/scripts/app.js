@@ -7337,3 +7337,19 @@ var app = (function (exports) {
     exports
   );
 })({});
+
+console.log("I am executed outside IIFE");
+
+$("#work-tabs a").on("click", function (e) {
+  e.preventDefault();
+  clickedButton = $(e.target);
+  $("#work-tabs .c-brand-list_item").removeClass("active");
+  clickedButton.closest(".c-brand-list_item").addClass("active");
+
+  selectedTab = clickedButton.data("tab-id");
+  $(".grid-container.active").fadeOut(250).hide().removeClass("active");
+  $("#" + selectedTab)
+    .fadeIn(250)
+    .show()
+    .addClass("active");
+});
