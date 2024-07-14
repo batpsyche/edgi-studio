@@ -1,76 +1,6 @@
 ﻿<!DOCTYPE html>
 <html data-template="home" class="has-no-js" lang="en-CA">
   <head>
-    <script type="text/javascript">
-      if (!gform) {
-        document.addEventListener("gform_main_scripts_loaded", function () {
-          gform.scriptsLoaded = !0;
-        }),
-          window.addEventListener("DOMContentLoaded", function () {
-            gform.domLoaded = !0;
-          });
-        var gform = {
-          domLoaded: !1,
-          scriptsLoaded: !1,
-          initializeOnLoaded: function (o) {
-            gform.domLoaded && gform.scriptsLoaded
-              ? o()
-              : !gform.domLoaded && gform.scriptsLoaded
-              ? window.addEventListener("DOMContentLoaded", o)
-              : document.addEventListener("gform_main_scripts_loaded", o);
-          },
-          hooks: { action: {}, filter: {} },
-          addAction: function (o, n, r, t) {
-            gform.addHook("action", o, n, r, t);
-          },
-          addFilter: function (o, n, r, t) {
-            gform.addHook("filter", o, n, r, t);
-          },
-          doAction: function (o) {
-            gform.doHook("action", o, arguments);
-          },
-          applyFilters: function (o) {
-            return gform.doHook("filter", o, arguments);
-          },
-          removeAction: function (o, n) {
-            gform.removeHook("action", o, n);
-          },
-          removeFilter: function (o, n, r) {
-            gform.removeHook("filter", o, n, r);
-          },
-          addHook: function (o, n, r, t, i) {
-            null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
-            var e = gform.hooks[o][n];
-            null == i && (i = n + "_" + e.length),
-              null == t && (t = 10),
-              gform.hooks[o][n].push({ tag: i, callable: r, priority: t });
-          },
-          doHook: function (o, n, r) {
-            if (
-              ((r = Array.prototype.slice.call(r, 1)),
-              null != gform.hooks[o][n])
-            ) {
-              var t,
-                i = gform.hooks[o][n];
-              i.sort(function (o, n) {
-                return o.priority - n.priority;
-              });
-              for (var e = 0; e < i.length; e++)
-                "function" != typeof (t = i[e].callable) && (t = window[t]),
-                  "action" == o ? t.apply(null, r) : (r[0] = t.apply(null, r));
-            }
-            if ("filter" == o) return r[0];
-          },
-          removeHook: function (o, n, r, t) {
-            if (null != gform.hooks[o][n])
-              for (var i = gform.hooks[o][n], e = i.length - 1; 0 <= e; e--)
-                (null != t && t != i[e].tag) ||
-                  (null != r && r != i[e].priority) ||
-                  i.splice(e, 1);
-          },
-        };
-      }
-    </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -103,18 +33,13 @@
     <link
       rel="icon"
       sizes="16x16 32x32 64x64"
-      href="../themes/homesociete/dist/images/favicons/favicon.png"
+      href="../themes/homesociete/dist/images/favicons/favicon-16x16.png"
     />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="../themes/homesociete/dist/images/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="mask-icon"
-      href="../themes/homesociete/dist/images/favicons/safari-pinned-tab.svg"
-      color="#E57920"
     />
 
     <meta
@@ -203,13 +128,11 @@
       type="text/css"
       media="all"
     />
-    <script
-      async=""
-      defer=""
-      type="text/javascript"
-      src="../recaptcha/api.js?render=explicit&#038;hl=en"
-      id="google-recaptcha-js"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script type="text/javascript">
       var ajaxurl = "http://edgi-local.com/wordpress/wp-admin/admin-ajax.php";
     </script>
@@ -308,9 +231,7 @@
     <div class="c-popup" data-module="Popup">
       <div class="c-popup_background js-close"></div>
       <div class="c-popup_inner">
-        <button class="c-popup_close o-link js-close" type="button">
-          Close
-        </button>
+        <button class="c-popup_close o-link js-close" type="button">X</button>
         <article class="c-popup_content js-content"></article>
       </div>
     </div>
@@ -405,10 +326,8 @@
         <div class="o-scroll" data-horizontal="" data-module="Scroll">
           <!-- Promo -->
           <div class="o-scroll_section">
-            <div class="c-promo" data-module="Carousel">
-              <div
-                class="c-promo_image_wrapper o-image_wrapper js-animate js-carousel swiper-container"
-              >
+            <div class="c-promo">
+              <div class="c-promo_image_wrapper o-image_wrapper js-animate">
                 <div class="">
                   <!-- prettier-ignore -->
                   <div class="c-home-intro_lines_item text-dim c-home-intro_lines_split js-animate" data-speed="1.5" data-position="top" data-module="SplittedText" data-delay="0.05" data-horizontal="" >wel</div>
@@ -1772,10 +1691,8 @@
                 <div class="work-filter-grid grid-container active" id="pane-1">
                   <div
                     type="button"
-                    data-module="Page, Event"
+                    data-module="Page"
                     data-title=""
-                    data-event-action="click"
-                    data-event-category="Opening popup"
                     class="filtr-item grid-item"
                     data-category="1"
                   >
@@ -1792,10 +1709,104 @@
                     <div class="is-hidden js-content">
                       <div class="c-popup_content_inner">
                         <header class="c-popup_header">
-                          <h1 class="c-popup_title">Coke Move</h1>
+                          <h1 class="c-popup_title">
+                            Coke Move
+                            <span class="small" style="font-size: 80%"
+                              >Logo Design</span
+                            >
+                          </h1>
                         </header>
-                        <div class="c-popup_main o-wysiwyg">
-                          <h1>COKE MOVE CONTENT</h1>
+                        <div class="c-popup_main">
+                          <div class="swiper-container" id="coke-move-slider">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/Cosmo-Logo-Design-04.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <p class="text-red" style="font-weight: 600">
+                                  Brief
+                                </p>
+                                <p>
+                                  Coca-Cola Beverages Africa (Kenya) office was
+                                  moving location. They were moving to a bigger
+                                  office to accommodate their staff. The brief
+                                  was to create a campaign to excite and
+                                  introduce the whole staff about this office
+                                  shift.
+                                </p>
+
+                                <p>
+                                  <span
+                                    class="text-red"
+                                    style="font-weight: 600"
+                                    >Creative Solution</span
+                                  ><br />
+                                  We created a logo called Cosmo and included
+                                  all the prominent brand colours of all
+                                  Coca-Cola drinks. For eg. Coca-Cola Red,
+                                  Schweppes Yellow, Powerade Blue, Sprite Green,
+                                  Fanta Orange.
+                                </p>
+
+                                <p>
+                                  Cosmo is derived from the word Cosmos. A
+                                  continuous area of limitless expanse which is
+                                  free and available.
+                                </p>
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <p>
+                                  Cosmo will support people’s growth,give space
+                                  for ideas to be shared, a space where people
+                                  will come together to achieve common goals.
+                                </p>
+
+                                <p>
+                                  Cosmo will be a safe space that promotes a
+                                  continuous flow of energy with a collaborative
+                                  spirit; a place that powers limitless growth,
+                                  allowing you to expand into your potential and
+                                  ultimately reach greater heights than ever
+                                  imagined. Cosmo will support coming together
+                                  to achieve common goals.
+                                </p>
+
+                                <p>
+                                  The Cosmo campaign panned out in different
+                                  phases and activities. From a teaser email
+                                  campaign, countdown posters, moving day
+                                  activities, office branding suggestions, and a
+                                  welcome party at the new office location.
+                                </p>
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/02-Coke-Move-Launch-KV-3.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/04-Coke-Move-Launch-KV-2.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/03-Coke-Move-Launch-KV1.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
                         </div>
                       </div>
                     </div>
@@ -1825,7 +1836,80 @@
                           <h1 class="c-popup_title">Dawa</h1>
                         </header>
                         <div class="c-popup_main o-wysiwyg">
-                          <h1>Dawa CONTENT</h1>
+                          <div class="swiper-container" id="dawa-slider">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide || js-carousel-slide">
+                                <video
+                                  class="lazyload"
+                                  muted
+                                  autoplay
+                                  loop
+                                  loading="lazy"
+                                >
+                                  <source
+                                    src="../themes/homesociete/dist/images/work/dawa_logo_animation.mp4"
+                                    type="video/mp4"
+                                  />
+                                  <!-- <source data-src="path/to/your/video.webm" type="video/webm"> -->
+                                  Your browser does not support the video tag.
+                                </video>
+                                <p
+                                  class="text-red"
+                                  style="text-align: center; font-weight: bold"
+                                >
+                                  LOGO ANIMATION
+                                </p>
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <p class="text-red" style="font-weight: 600">
+                                  Brief
+                                </p>
+                                <p>
+                                  Dawa Group (pharmaceutical company),Kenya,
+                                  wanted to merge their sistercompanies and give
+                                  it a unified identity. The brief was to give
+                                  the new logo a simple, modern and, a pharma
+                                  look. It should be easily identifiable with
+                                  symbols or just typface. It should have a
+                                  circle and should have the existing brand
+                                  colour (Green).
+                                </p>
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <p class="text-red" style="font-weight: 600">
+                                  Logo Rationale
+                                </p>
+                                <p>
+                                  This logo design takes the circular shape of
+                                  the original Dawa logo and reimagines it in a
+                                  new and fresh way. Showcasing simplicity,
+                                  elegance and the feeling of things coming
+                                  together in a full circle.
+                                </p>
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/02-Coke-Move-Launch-KV-3.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/04-Coke-Move-Launch-KV-2.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                              <div class="swiper-slide || js-carousel-slide">
+                                <img
+                                  src="../themes/homesociete/dist/images/work/03-Coke-Move-Launch-KV1.jpg"
+                                  alt=""
+                                  srcset=""
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -4428,11 +4512,6 @@
         </div>
       </div>
     </div>
-
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
     <script
       type="text/javascript"
       src="../ajax/libs/jquery/3.3.1/jquery.min.js"
@@ -4472,36 +4551,11 @@
       src="../themes/homesociete/dist/scripts/app.js?ver=202106230936"
       id="sage/app.js-js"
     ></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
-		<script>
-			const filterizr = new Filterizr('.work-filter-grid',{});
-		</script> -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
     <script>
-      // var iterator = 0;
-      // var scripts = [
-      //     '../themes/homesociete/dist/scripts/vendors.js',
-      //     '../themes/homesociete/dist/scripts/app.js'
-      // ];
-
-      // function dynamicallyLoadScript(url) {
-
-      //     var script = document.createElement('script');
-      //     script.type= 'text/javascript';
-      //     script.src = url;
-      //     document.body.appendChild(script);
-
-      //     script.onload = function() {
-      //         if(iterator < scripts.length - 1) {
-      //             iterator++;
-      //             dynamicallyLoadScript(scripts[iterator]);
-      //         }
-      //     }
-      // }
-
-      // window.onload = function(e) {
-      //     dynamicallyLoadScript(scripts[iterator]);
-      // }
+      document.addEventListener("DOMContentLoaded", function () {
+        lazySizes.init();
+      });
     </script>
   </body>
 </html>

@@ -6926,6 +6926,36 @@ var app = (function (exports) {
               this.$content.html(e.html()),
                 setTimeout(function () {
                   $html.addClass(CLASS$4.OPEN);
+                  let cokeSwiperElem = $(t.options.content).find(
+                    ".swiper-container"
+                  );
+                  let popupSwiperContainerId = $(cokeSwiperElem[0]).attr("id");
+                  const tempSwiper = new Swiper(`#${popupSwiperContainerId}`, {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 50,
+                  });
+                  let prevButton = $(cokeSwiperElem).siblings(
+                    ".swiper-button-prev"
+                  );
+                  let nextButton = $(cokeSwiperElem).siblings(
+                    ".swiper-button-next"
+                  );
+
+                  $(".js-content .swiper-button-prev").on(
+                    "click",
+                    function (e) {
+                      e.preventDefault();
+                      tempSwiper.slidePrev();
+                    }
+                  );
+                  $(".js-content .swiper-button-next").on(
+                    "click",
+                    function (e) {
+                      e.preventDefault();
+                      tempSwiper.slideNext();
+                    }
+                  );
                 }, 100);
             },
           },
