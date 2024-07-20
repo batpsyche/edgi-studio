@@ -6931,16 +6931,62 @@ var app = (function (exports) {
                   );
                   let popupSwiperContainerId = $(cokeSwiperElem[0]).attr("id");
                   const tempSwiper = new Swiper(`#${popupSwiperContainerId}`, {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    spaceBetween: 50,
+                    slidesPerView: "auto",
+                    spaceBetween: "5%",
+                    breakpoints: {
+                      768: {
+                        slidesPerView: 1,
+                      },
+                    },
                   });
-                  let prevButton = $(cokeSwiperElem).siblings(
-                    ".swiper-button-prev"
-                  );
-                  let nextButton = $(cokeSwiperElem).siblings(
-                    ".swiper-button-next"
-                  );
+
+                  // Function to update slidesPerView based on active slide's data attribute
+                  function updateSlidesPerView() {
+                    const activeSlide =
+                      tempSwiper.slides[tempSwiper.activeIndex];
+                    const slidesPerView = activeSlide.getAttribute(
+                      "data-slides-per-view"
+                    );
+                    tempSwiper.params.slidesPerView = parseInt(
+                      slidesPerView,
+                      10
+                    );
+                    // tempSwiper.params.slidesPerGroup = parseInt(
+                    //   slidesPerView,
+                    //   10
+                    // );
+                    console.log("before");
+                    console.table([
+                      ["activeIndex", tempSwiper.activeIndex],
+                      ["slidesPerView", tempSwiper.params.slidesPerView],
+                      ["slidesPerGroup", tempSwiper.params.slidesPerGroup],
+                    ]);
+                    // tempSwiper.update();
+                    console.log("after");
+                    console.table([
+                      ["activeIndex", tempSwiper.activeIndex],
+                      ["slidesPerView", tempSwiper.params.slidesPerView],
+                      ["slidesPerGroup", tempSwiper.params.slidesPerGroup],
+                    ]);
+                  }
+
+                  // updateSlidesPerView();
+
+                  // tempSwiper.on("slidePrevTransitionStart", function () {
+                  //   let activeSlide = tempSwiper.slides[tempSwiper.activeIndex];
+                  //   let slidesPerView = activeSlide.getAttribute(
+                  //     "data-slides-per-view"
+                  //   );
+                  //   tempSwiper.params.slidesPerGroup = parseInt(
+                  //     slidesPerView,
+                  //     10
+                  //   );
+                  //   tempSwiper.update();
+                  // });
+
+                  // tempSwiper.on("slideChange", function () {
+                  //   updateSlidesPerView();
+                  // });
 
                   $(".js-content .swiper-button-prev").on(
                     "click",
@@ -6956,6 +7002,7 @@ var app = (function (exports) {
                       tempSwiper.slideNext();
                     }
                   );
+                  window.tempSwiper = tempSwiper;
                 }, 100);
             },
           },
