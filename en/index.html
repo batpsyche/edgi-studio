@@ -2779,9 +2779,9 @@
                   class="c-contact_content_summary c-block-content_summary js-animate"
                 >
                   <p>
-                    <span style="font-weight: 400"
-                      >A collective of local and international brands in two
-                      spectacular and convenient locations.</span
+                    <span
+                      >If you want to find your competetive edge as a business,
+                      we're here to help you find it. Let's grow together</span
                     >
                   </p>
                 </div>
@@ -2790,7 +2790,7 @@
                     class="c-contact_newsletter_target"
                     id="newsletter"
                   ></span>
-                  <p>Get all the latest news and promotions.</p>
+                  <p>Reach out to us</p>
                   <form
                     class="c-contact_newsletter_form js-form"
                     method="POST"
@@ -2806,16 +2806,54 @@
                     />
                     <input type="hidden" name="is_submit_2" value="1" />
 
+                    <label for="newsletter-name" class="is-hidden">Name</label>
+                    <input
+                      id="newsletter-name"
+                      name="input_1"
+                      class="c-contact_newsletter_input"
+                      type="text"
+                      placeholder="Name"
+                    />
+                    <label for="newsletter-company" class="is-hidden"
+                      >Company</label
+                    >
+                    <input
+                      id="newsletter-company"
+                      name="input_1"
+                      class="c-contact_newsletter_input"
+                      type="text"
+                      placeholder="Company"
+                    />
                     <label for="newsletter-email" class="is-hidden"
-                      >Your e-mail</label
+                      >Email</label
                     >
                     <input
                       id="newsletter-email"
                       name="input_1"
                       class="c-contact_newsletter_input"
                       type="email"
-                      placeholder="Your e-mail"
+                      placeholder="Email"
                     />
+                    <label for="newsletter-email" class="is-hidden"
+                      >Phone</label
+                    >
+                    <input
+                      id="newsletter-email"
+                      name="input_1"
+                      class="c-contact_newsletter_input"
+                      type="email"
+                      placeholder="Phone"
+                    />
+                    <label for="newsletter-email" class="is-hidden"
+                      >What are your business goals?</label
+                    >
+                    <textarea
+                      name="c-contact_newsletter_message"
+                      id="c-contact_newsletter_message"
+                      rows="2"
+                      placeholder="What are your business goals?"
+                    ></textarea>
+
                     <button
                       class="c-contact_newsletter_submit"
                       type="submit"
@@ -2824,21 +2862,62 @@
                       data-event-category="Newsletter"
                       data-event-label="Submit newsletter subscription"
                     >
-                      <svg aria-hidden="true" role="img">
+                      <p style="display: inline">Submit</p>
+                      <svg
+                        style="display: inline; margin-top: 0.2rem"
+                        aria-hidden="true"
+                        role="img"
+                        width="30px"
+                        height="20px"
+                      >
                         <use
                           href="../themes/homesociete/dist/images/sprite.svg#arrow-right"
                           xlink:href="../themes/homesociete/dist/images/sprite.svg#arrow-right"
+                          height="10px"
                         ></use>
                       </svg>
                     </button>
                   </form>
                   <div class="js-post-submit" style="display: none">
-                    <p>You are subscribed. Stay tuned!</p>
+                    <p>
+                      Thankyou for your response, we'll get in touch with you
+                      soon
+                    </p>
                   </div>
                   <div class="js-pre-submit">
-                    <p>You can unsubscribe at any time.</p>
+                    <!-- <p>You can unsubscribe at any time.</p> -->
                   </div>
-                  <button
+                  <ul
+                    id="menu-social"
+                    class="c-contact_socials"
+                    aria-label="Social Media"
+                  >
+                    <li
+                      class="c-contact_socials_item menu-item menu-item-instagram"
+                    >
+                      <a class="" target="_blank" href="#"
+                        ><span class="u-screen-reader-text">Instagram</span
+                        ><svg aria-hidden="true" role="img">
+                          <use
+                            href="../themes/homesociete/dist/images/sprite.svg#instagram"
+                            xlink:href="../themes/homesociete/dist/images/sprite.svg#instagram"
+                          ></use></svg
+                      ></a>
+                    </li>
+                    <li
+                      class="c-contact_socials_item menu-item menu-item-linkedin"
+                    >
+                      <a class="" target="_blank" href="#"
+                        ><span class="u-screen-reader-text">LinkedIn</span
+                        ><svg aria-hidden="true" role="img">
+                          <use
+                            href="../themes/homesociete/dist/images/sprite.svg#linkedin"
+                            xlink:href="../themes/homesociete/dist/images/sprite.svg#linkedin"
+                          ></use></svg
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- <button
                     type="button"
                     class="c-contact_col_footer_link o-link"
                     data-module="Page, Event"
@@ -2857,8 +2936,8 @@
                         <div class="c-popup_main o-wysiwyg"></div>
                       </div>
                     </div>
-                  </button>
-                  <button
+                  </button> -->
+                  <!-- <button
                     type="button"
                     class="c-contact_col_footer_link o-link"
                     data-module="Page,Event"
@@ -2877,10 +2956,10 @@
                         <div class="c-popup_main o-wysiwyg"></div>
                       </div>
                     </div>
-                  </button>
+                  </button> -->
                 </div>
               </div>
-              <div class="c-contact_infos">
+              <!-- <div class="c-contact_infos">
                 <div class="o-layout -gutter">
                   <div class="c-contact_col js-animate o-layout_item u-1/2">
                     <div class="o-layout">
@@ -3021,54 +3100,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <ul
-                id="menu-social"
-                class="c-contact_socials"
-                aria-label="Social Media"
-              >
-                <li class="c-contact_socials_item menu-item menu-item-facebook">
-                  <a
-                    class=""
-                    target="_blank"
-                    href="https://www.facebook.com/Home-Société-349660795676698/"
-                    ><span class="u-screen-reader-text">Facebook</span
-                    ><svg aria-hidden="true" role="img">
-                      <use
-                        href="../themes/homesociete/dist/images/sprite.svg#facebook"
-                        xlink:href="../themes/homesociete/dist/images/sprite.svg#facebook"
-                      ></use></svg
-                  ></a>
-                </li>
-                <li
-                  class="c-contact_socials_item menu-item menu-item-instagram"
-                >
-                  <a
-                    class=""
-                    target="_blank"
-                    href="https://www.instagram.com/home_societe/"
-                    ><span class="u-screen-reader-text">Instagram</span
-                    ><svg aria-hidden="true" role="img">
-                      <use
-                        href="../themes/homesociete/dist/images/sprite.svg#instagram"
-                        xlink:href="../themes/homesociete/dist/images/sprite.svg#instagram"
-                      ></use></svg
-                  ></a>
-                </li>
-                <li class="c-contact_socials_item menu-item menu-item-linkedin">
-                  <a
-                    class=""
-                    target="_blank"
-                    href="https://www.linkedin.com/company/18918687/admin/"
-                    ><span class="u-screen-reader-text">LinkedIn</span
-                    ><svg aria-hidden="true" role="img">
-                      <use
-                        href="../themes/homesociete/dist/images/sprite.svg#linkedin"
-                        xlink:href="../themes/homesociete/dist/images/sprite.svg#linkedin"
-                      ></use></svg
-                  ></a>
-                </li>
-              </ul>
+              </div> -->
+
               <p class="c-block-content_label">Contact</p>
             </div>
           </div>
