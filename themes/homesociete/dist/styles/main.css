@@ -4062,7 +4062,7 @@ html.is-ie .c-promo_arrow:hover {
     padding: 2.5rem;
   }
   .c-brand-list_wrapper:after {
-    content: "";
+    /* content: ""; */
     width: 1px;
     height: calc(100% - 5rem);
     background-color: #aaa;
@@ -5762,7 +5762,7 @@ a.c-brand_logo:hover {
   padding: 3rem 5rem;
   /* max-width: 37.5rem; */
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 @media (max-width: 1199px) {
@@ -6351,17 +6351,18 @@ a.c-brand_logo:hover {
 
 .c-popup_main .swiper-slide {
   text-align: left;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: start; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-popup_main .swiper-slide img {
   max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: auto;
 }
 .c-popup_main .swiper-button-prev,
 .c-popup_main .swiper-button-next {
@@ -6444,6 +6445,9 @@ a.c-brand_logo:hover {
   }
   .c-promo_arrow {
     bottom: 10%;
+  }
+  .work-filter-grid .filtr-item img {
+    max-width: 20rem;
   }
 }
 @media all and (min-width: 1601px) {
