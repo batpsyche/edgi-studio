@@ -6932,13 +6932,40 @@ var app = (function (exports) {
                   let popupSwiperContainerId = $(cokeSwiperElem[0]).attr("id");
                   const tempSwiper = new Swiper(`#${popupSwiperContainerId}`, {
                     slidesPerView: "auto",
+                    watchOverflow:true,
                     spaceBetween: "5%",
                     breakpoints: {
                       768: {
                         slidesPerView: 1,
                       },
                     },
+                    on:{
+                      slideChange:function(){
+                        updateNavigationButtons(this);
+                      },
+                      init:function(){
+                        updateNavigationButtons(this);
+                      },
+                    }
                   });
+
+                  function updateNavigationButtons(swiperInstance) {
+                    const nextButton = $(swiperInstance.$el[0]).siblings(".swiper-button-next")[0];
+                    const prevButton = $(swiperInstance.$el[0]).siblings(".swiper-button-prev")[0];
+                    console.log([nextButton,prevButton])
+        
+                    if (swiperInstance.isEnd) {
+                        nextButton.classList.add('swiper-button-disabled');
+                    } else {
+                        nextButton.classList.remove('swiper-button-disabled');
+                    }
+        
+                    if (swiperInstance.isBeginning) {
+                        prevButton.classList.add('swiper-button-disabled');
+                    } else {
+                        prevButton.classList.remove('swiper-button-disabled');
+                    }
+                }
 
                   // Function to update slidesPerView based on active slide's data attribute
                   function updateSlidesPerView() {

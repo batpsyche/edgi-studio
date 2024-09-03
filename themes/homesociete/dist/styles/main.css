@@ -2373,7 +2373,7 @@ button.swiper-pagination-bullet {
   display: inline-block;
   vertical-align: top;
   /* padding: 2.5rem; */
-  padding: 1rem 2.5rem 0 2.5rem;
+  padding: 1rem 5rem 0 0rem;
   white-space: normal;
   margin: 0;
   opacity: 0;
@@ -2422,8 +2422,7 @@ button.swiper-pagination-bullet {
 
 .c-home-intro_lines {
   display: inline-block;
-  /* width: 162vh; */
-  width: 190vh;
+  width: 200vh;
 }
 
 @media (min-width: 1000px) {
@@ -6251,7 +6250,7 @@ a.c-brand_logo:hover {
   }
 }
 .text-dim {
-  color: #939598;
+  color: var(--grey);
 }
 .text-red {
   color: var(--red);
@@ -6349,6 +6348,9 @@ a.c-brand_logo:hover {
   height: 100%;
 }
 
+.c-popup_main .swiper-slide p:not(.text-red){
+  color:var(--grey);
+}
 .c-popup_main .swiper-slide {
   text-align: left;
   display: flex;
