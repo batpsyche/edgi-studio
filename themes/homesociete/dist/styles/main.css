@@ -6348,8 +6348,8 @@ a.c-brand_logo:hover {
   height: 100%;
 }
 
-.c-popup_main .swiper-slide p:not(.text-red){
-  color:var(--grey);
+.c-popup_main .swiper-slide p:not(.text-red) {
+  color: var(--grey);
 }
 .c-popup_main .swiper-slide {
   text-align: left;
@@ -6384,6 +6384,11 @@ a.c-brand_logo:hover {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.c-popup_main .swiper-button-next.swiper-button-disabled,
+.c-popup_main .swiper-button-prev.swiper-button-disabled {
+  display: none;
 }
 
 @media all and (min-width: 768px) {
