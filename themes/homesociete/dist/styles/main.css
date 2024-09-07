@@ -6367,6 +6367,16 @@ a.c-brand_logo:hover {
   justify-content: center;
 }
 
+@media all and (max-width: 699px) {
+  .c-popup_main .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
+}
+
 .c-popup_main .swiper-slide img {
   max-width: 100%;
   height: 100%;
@@ -6387,11 +6397,6 @@ a.c-brand_logo:hover {
 .c-popup_main .swiper-slide video {
   max-width: 100%;
   height: auto;
-}
-.c-popup_main .swiper-slide.w-1 img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .c-popup_main .swiper-button-next.swiper-button-disabled,
@@ -6450,6 +6455,11 @@ a.c-brand_logo:hover {
   }
   .c-popup_main .swiper-slide.w-1 {
     width: 95%;
+  }
+  .c-popup_main .swiper-slide.w-1 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
