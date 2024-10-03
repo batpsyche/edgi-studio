@@ -5727,9 +5727,8 @@ a.c-brand_logo:hover {
     -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.c-popup_title .small{
+.c-popup_title .small {
   font-size: 70%;
-
 }
 
 .has-popup-open .c-popup_title {
@@ -6372,7 +6371,7 @@ a.c-brand_logo:hover {
   justify-content: center;
 }
 
-.c-popup .slide-img-wrapper{
+.c-popup .slide-img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6395,8 +6394,12 @@ a.c-brand_logo:hover {
   object-fit: contain;
   display: block;
   margin: auto;
-  border : 2px solid #eee;
+  border: 2px solid #eee;
 }
+.c-popup_main .swiper-slide:first-child img {
+  border: none;
+}
+
 .c-popup_main .swiper-button-prev,
 .c-popup_main .swiper-button-next {
   background-image: none;
