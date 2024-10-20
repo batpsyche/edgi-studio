@@ -4813,7 +4813,7 @@ a.c-brand_logo:hover {
 }
 
 .c-contact_content_summary {
-  margin-bottom: 3.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .c-contact_newsletter {
@@ -4985,7 +4985,7 @@ a.c-brand_logo:hover {
 #c-contact_newsletter_message {
   border: 1px solid #000;
   padding: 0.83333rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
 }
 
 @media (max-width: 699px) {
@@ -5068,7 +5068,7 @@ a.c-brand_logo:hover {
 .c-contact_socials_item {
   position: relative;
   padding: 1.25rem 0.875rem;
-  margin-right: 0.875rem;
+  margin-right: 1rem;
   -webkit-transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
@@ -6427,6 +6427,11 @@ a.c-brand_logo:hover {
   .c-promo .c-promo_arrow {
     display: none;
   }
+  .c-popup_main .swiper-button-prev,
+  .c-popup_main .swiper-button-next {
+    position: absolute;
+    top: 90%;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -6488,8 +6493,11 @@ a.c-brand_logo:hover {
     margin: 0 0 2rem 0;
   }
 
+  .after-welcome {
+    margin-top: 1rem;
+  }
   .c-home-intro_lines_split {
-    font-size: 22vh;
+    font-size: 21vh;
   }
 
   .grid-container.active {
