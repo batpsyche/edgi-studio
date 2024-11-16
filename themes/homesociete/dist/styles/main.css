@@ -6419,6 +6419,10 @@ a.c-brand_logo:hover {
 .c-popup_main .swiper-button-prev.swiper-button-disabled {
   display: none;
 }
+#phone-numbers {
+  display: none;
+}
+
 @media all and (max-width: 768px) {
   .c-promo .c-home-intro_lines_item {
     font-size: 6rem;
@@ -6517,30 +6521,34 @@ a.c-brand_logo:hover {
     max-width: 250px;
     height: 100%;
   }
-  #phone-numbers{
+  #phone-numbers-m {
+    display: none;
+  }
+
+  #phone-numbers {
     position: absolute;
-    top:-24%;
-    right:-110%;
+    top: -24%;
+    right: -110%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: start;
     display: 100%;
-    height:70%;
+    height: 70%;
   }
-  #phone-numbers .contact-big{
+  #phone-numbers .contact-big {
     font-size: 170%;
-    margin:0;
+    margin: 0;
     font-weight: 300;
   }
-  
-  .c-contact_newsletter{
+
+  .c-contact_newsletter {
     position: relative;
   }
-  .c-contact_newsletter::after{
-    content: '';
-    top:5%;
-    right:-10%;
+  .c-contact_newsletter::after {
+    content: "";
+    top: 5%;
+    right: -10%;
     height: 65%;
     display: inline-block;
     width: 1px;
