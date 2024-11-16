@@ -7466,10 +7466,12 @@ $("#work-tabs a").on("click", function (e) {
   $("#work-tabs .c-brand-list_item").removeClass("active");
   clickedButton.closest(".c-brand-list_item").addClass("active");
 
-  selectedTab = clickedButton.data("tab-id");
-  $(".grid-container.active").fadeOut(250).hide().removeClass("active");
-  $("#" + selectedTab)
+  let selectedTab = clickedButton.data("tab-id");
+
+  $(".grid-item").fadeOut(250).hide();
+
+  // $(".grid-container.active").fadeOut(250).hide().removeClass("active");
+  $(".grid-item[data-category=" + selectedTab + "]")
     .fadeIn(250)
-    .show()
-    .addClass("active");
+    .show();
 });

@@ -6340,6 +6340,7 @@ a.c-brand_logo:hover {
 .grid-item {
   width: auto;
   height: auto;
+  position: relative;
 }
 
 .divider {
@@ -6508,12 +6509,25 @@ a.c-brand_logo:hover {
     display: grid !important;
     grid-template-rows: auto auto;
     grid-auto-flow: column;
-    gap: 1% 2rem;
+    gap: 1% 4rem;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: auto;
     /* overflow-x:scroll; */
+  }
+
+  .grid-item::after {
+    content: "";
+    background-color: var(--grey);
+    align-self: stretch;
+    grid-row: span 2 / auto;
+    border-left: 1px solid #aaa;
+    width: 1px;
+    height: 103%;
+    position: absolute;
+    top: 0;
+    right: -10%;
   }
 
   .work-filter-grid .filtr-item img {
