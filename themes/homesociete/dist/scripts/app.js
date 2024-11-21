@@ -6790,7 +6790,16 @@ var app = (function (exports) {
                     dataType: "json",
                     data: e,
                   })
-                    .done($.proxy(t.onAjaxDone, t))
+                    .done(function (data) {
+                      if (data.success) {
+                        $(".js-form")[0].reset();
+                        alert(
+                          "Thankyou for your response, we'll get in touch with you soon"
+                        );
+                      } else {
+                        alert("Something went wrong, please try again later");
+                      }
+                    })
                     .fail($.proxy(t.onAjaxFail, t))
                     .always(function () {
                       setTimeout(function () {
@@ -6843,6 +6852,7 @@ var app = (function (exports) {
                 console.log(o),
                 console.log(e),
                 console.groupEnd();
+              alert( o.error || "Something went wrong with the request, please try again later");
             },
           },
           {

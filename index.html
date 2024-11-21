@@ -3235,7 +3235,7 @@
                   <form
                     class="c-contact_newsletter_form js-form"
                     method="POST"
-                    data-action="https://dev.edgidesignhub.com/wp-ajax.php?action=process_form_submissions"
+                    data-action="https://edgidesignhub.com/api/send-email"
                   >
                     <input type="hidden" name="lang" value="en" />
                     <input type="hidden" name="input_2" value="en" />
@@ -3250,7 +3250,7 @@
                     <label for="newsletter-name" class="is-hidden">Name</label>
                     <input
                       id="newsletter-name"
-                      name="input_1"
+                      name="name"
                       class="c-contact_newsletter_input"
                       type="text"
                       placeholder="Name"
@@ -3260,7 +3260,7 @@
                     >
                     <input
                       id="newsletter-company"
-                      name="input_1"
+                      name="company"
                       class="c-contact_newsletter_input"
                       type="text"
                       placeholder="Company"
@@ -3270,7 +3270,7 @@
                     >
                     <input
                       id="newsletter-email"
-                      name="input_1"
+                      name="email"
                       class="c-contact_newsletter_input"
                       type="email"
                       placeholder="Email"
@@ -3280,16 +3280,16 @@
                     >
                     <input
                       id="newsletter-email"
-                      name="input_1"
+                      name="phone"
                       class="c-contact_newsletter_input"
-                      type="email"
+                      type="tel"
                       placeholder="Phone"
                     />
                     <label for="newsletter-email" class="is-hidden"
                       >What are your business goals?</label
                     >
                     <textarea
-                      name="c-contact_newsletter_message"
+                      name="message"
                       id="c-contact_newsletter_message"
                       rows="2"
                       placeholder="What are your business goals?"
