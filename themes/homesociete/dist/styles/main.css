@@ -6541,8 +6541,8 @@ a.c-brand_logo:hover {
 
   #phone-numbers {
     position: absolute;
-    top: -24%;
-    right: -110%;
+    top: -20%;
+    right: -120%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -6554,6 +6554,7 @@ a.c-brand_logo:hover {
     font-size: 170%;
     margin: 0;
     font-weight: 300;
+    margin-bottom:1rem;
   }
 
   .c-contact_newsletter {
