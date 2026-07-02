@@ -167,6 +167,14 @@ textarea.wf-input {
 
 .wf-radio-row input,
 .wf-checkbox-row input {
+  /* main.css resets all <input> to display:block/width:100% and
+     appearance:none, which would otherwise stretch the checkbox/radio
+     to fill the row (squeezing its label into a sliver) and strip its
+     native control appearance entirely (leaving nothing for
+     accent-color to tint). Restore both here. */
+  width: auto;
+  -webkit-appearance: auto;
+  appearance: auto;
   accent-color: var(--red);
   margin-top: 0.2rem;
   flex-shrink: 0;
@@ -225,6 +233,6 @@ textarea.wf-input {
   .wf-form,
   .wf-thankyou {
     max-width: 34rem;
-    margin: 0;
+    margin: 0 auto;
   }
 }

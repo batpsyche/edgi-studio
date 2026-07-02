@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
+    />
+    <title>I Need Customers — Registration | Edgi Design Hub</title>
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="/themes/homesociete/dist/images/favicons/favicon.jpg"
+    />
+    <link rel="stylesheet" href="/themes/homesociete/dist/styles/main.css" />
+    <link rel="stylesheet" href="/themes/homesociete/dist/styles/webinar.css" />
+  </head>
+  <body class="wf-page">
+    <div class="wf-shell">
+      <aside class="wf-panel">
+        <a href="/" class="wf-logo">
+          <svg aria-hidden="true" role="img" width="140" height="40">
+            <use
+              href="/themes/homesociete/dist/images/edgi_main.svg#horizontal_black"
+              xlink:href="/themes/homesociete/dist/images/edgi_main.svg#horizontal_black"
+            ></use>
+          </svg>
+        </a>
+        <h1 class="wf-headline">Complete this short 3-minute application</h1>
+        <p class="wf-subhead">
+          to request a seat for the live session on Wednesday, 15 July 2026 at
+          11:00 AM GST.
+        </p>
+        <div class="wf-panel_footer">
+          <div class="wf-qr">
+            <img
+              src="/themes/homesociete/dist/images/webinar-qr.png"
+              alt="Scan to visit edgidesignhub.com"
+              width="96"
+              height="96"
+            />
+            <p>Scan QR code<br />to visit website</p>
+          </div>
+          <div class="wf-socials">
+            <p>Please Follow Us</p>
+            <div class="wf-socials_icons">
+              <a
+                href="https://www.instagram.com/edgidesignhub?igsh=MWRtNG9wcjU2M2VyNA=="
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="/themes/homesociete/dist/images/webinar-instagram.png"
+                  alt="Instagram"
+                  width="32"
+                  height="32"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/edgi-design-hub-edh/"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="/themes/homesociete/dist/images/webinar-linkedin.png"
+                  alt="LinkedIn"
+                  width="32"
+                  height="32"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main class="wf-form_panel">
+        <form
+          class="wf-form js-webinar-form"
+          method="POST"
+          data-action="https://edgidesignhub.com/api/send-registration"
+          data-thankyou="/thank-you-1"
+        >
+          <p class="wf-error" role="alert" hidden></p>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="full_name"
+              placeholder="Full Name*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="business_name"
+              placeholder="Business Name*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="email"
+              name="email"
+              placeholder="Email Address*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="tel"
+              name="phone"
+              placeholder="Mobile / WhatsApp Number*"
+              required
+            />
+          </div>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Your Role / Title<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="role"
+                value="Founder / Co-Founder / Owner"
+                required
+              />
+              Founder / Co-Founder / Owner</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="role"
+                value="Managing Partner / CEO / C-Suite"
+              />
+              Managing Partner / CEO / C-Suite</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="role"
+                value="Marketing Director / Growth Lead"
+              />
+              Marketing Director / Growth Lead</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="role" value="Other" /> Other</label
+            >
+          </fieldset>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="website"
+              placeholder="Company Website / Corporate LinkedIn URL"
+            />
+            <p class="wf-hint">
+              Please share the most relevant link where I can review your
+              business presence.
+            </p>
+          </div>
+
+          <fieldset
+            class="wf-field wf-checkbox-group"
+            data-max-select="2"
+            required
+          >
+            <p class="wf-question">
+              What is the single biggest bottleneck holding back your business
+              growth right now?<span class="wf-required">*</span>
+            </p>
+            <p class="wf-hint">Select up to 2</p>
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="bottleneck[]"
+                value="We aren't getting enough qualified inbound leads."
+              />
+              We aren't getting enough qualified inbound leads.</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="bottleneck[]"
+                value="Prospects look at us but constantly compare us on price or ask for discounts."
+              />
+              Prospects look at us but constantly compare us on price or ask for
+              discounts.</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="bottleneck[]"
+                value="Our digital footprint doesn't look as premium or professional as our actual service."
+              />
+              Our digital footprint doesn't look as premium or professional as
+              our actual service.</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="bottleneck[]"
+                value="We depend entirely on referrals and have no predictable outbound/inbound pipeline."
+              />
+              We depend entirely on referrals and have no predictable
+              outbound/inbound pipeline.</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="bottleneck[]"
+                value="Our brand messaging sounds exactly like our direct competitors in Dubai."
+              />
+              Our brand messaging sounds exactly like our direct competitors in
+              Dubai.</label
+            >
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              If this session identifies a clear path to fix your positioning,
+              are you looking to actively upgrade your brand assets or strategy
+              within the next 90 days?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="upgrade_intent"
+                value="Yes, if the roadmap makes sense."
+                required
+              />
+              Yes, if the roadmap makes sense.</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="upgrade_intent"
+                value="Maybe, depending on resources and alignment."
+              />
+              Maybe, depending on resources and alignment.</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="upgrade_intent"
+                value="No, I am strictly looking for educational insights right now."
+              />
+              No, I am strictly looking for educational insights right
+              now.</label
+            >
+          </fieldset>
+
+          <button type="submit" class="o-button wf-submit">
+            Apply For A Vetted Seat
+          </button>
+        </form>
+      </main>
+    </div>
+    <script src="/themes/homesociete/dist/scripts/webinar-form.js"></script>
+  </body>
+</html>
