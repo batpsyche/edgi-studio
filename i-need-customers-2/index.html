@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
+    />
+    <title>Brand Clarity Call — I Need Customers | Edgi Design Hub</title>
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      sizes="16x16 32x32 64x64"
+      href="/themes/homesociete/dist/images/favicons/favicon.jpg"
+    />
+    <link rel="stylesheet" href="/themes/homesociete/dist/styles/main.css" />
+    <link rel="stylesheet" href="/themes/homesociete/dist/styles/webinar.css" />
+  </head>
+  <body class="wf-page">
+    <div class="wf-shell">
+      <aside class="wf-panel">
+        <a href="/" class="wf-logo">
+          <svg aria-hidden="true" role="img" width="140" height="40">
+            <use
+              href="/themes/homesociete/dist/images/edgi_main.svg#horizontal_black"
+              xlink:href="/themes/homesociete/dist/images/edgi_main.svg#horizontal_black"
+            ></use>
+          </svg>
+        </a>
+        <h1 class="wf-headline">Complimentary Brand Clarity Call</h1>
+        <p class="wf-subhead">
+          For selected founders, business owners, and decision-makers from the
+          &ldquo;I Need Customers&rdquo; session. Please complete the short form
+          below. It should take 3&ndash;5 minutes. I will personally review the
+          responses and confirm 5 slots where I feel I can add the most
+          practical value.
+        </p>
+        <div class="wf-panel_footer">
+          <div class="wf-qr">
+            <img
+              src="/themes/homesociete/dist/images/webinar-qr.png"
+              alt="Scan to visit edgidesignhub.com"
+              width="96"
+              height="96"
+            />
+            <p>Scan QR code<br />to visit website</p>
+          </div>
+          <div class="wf-socials">
+            <p>Please Follow Us</p>
+            <div class="wf-socials_icons">
+              <a
+                href="https://www.instagram.com/edgidesignhub?igsh=MWRtNG9wcjU2M2VyNA=="
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="/themes/homesociete/dist/images/webinar-instagram.png"
+                  alt="Instagram"
+                  width="32"
+                  height="32"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/edgi-design-hub-edh/"
+                target="_blank"
+                rel="noopener"
+                ><img
+                  src="/themes/homesociete/dist/images/webinar-linkedin.png"
+                  alt="LinkedIn"
+                  width="32"
+                  height="32"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main class="wf-form_panel">
+        <form
+          class="wf-form js-webinar-form"
+          method="POST"
+          data-action="https://edgidesignhub.com/api/send-brand-clarity"
+          data-thankyou="/thank-you-2"
+        >
+          <p class="wf-error" role="alert" hidden></p>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="full_name"
+              placeholder="Full Name*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="business_name"
+              placeholder="Business Name*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="email"
+              name="email"
+              placeholder="Email Address*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="tel"
+              name="phone"
+              placeholder="Mobile / WhatsApp Number*"
+              required
+            />
+          </div>
+
+          <div class="wf-field">
+            <input
+              class="o-input wf-input"
+              type="text"
+              name="web_link"
+              placeholder="Website / LinkedIn / Instagram Link*"
+              required
+            />
+            <p class="wf-hint">
+              Please share the most relevant link where I can review your
+              business presence.
+            </p>
+          </div>
+
+          <div class="wf-field">
+            <select
+              class="o-select wf-input"
+              name="industry"
+              data-other-group="industry"
+              required
+            >
+              <option value="" disabled selected>Industry*</option>
+              <option value="Technology / SaaS / AI">
+                Technology / SaaS / AI
+              </option>
+              <option value="Fintech / Financial Services">
+                Fintech / Financial Services
+              </option>
+              <option value="Retail / E-commerce">Retail / E-commerce</option>
+              <option value="Real Estate / Property">
+                Real Estate / Property
+              </option>
+              <option value="Healthcare / Clinic / Aesthetics">
+                Healthcare / Clinic / Aesthetics
+              </option>
+              <option value="Education / EdTech">Education / EdTech</option>
+              <option value="Tourism / Hospitality / Entertainment">
+                Tourism / Hospitality / Entertainment
+              </option>
+              <option value="F&amp;B">F&amp;B</option>
+              <option value="Professional Services / Consulting">
+                Professional Services / Consulting
+              </option>
+              <option value="Creative / Media / Marketing">
+                Creative / Media / Marketing
+              </option>
+              <option value="Other">Other</option>
+            </select>
+            <input
+              class="o-input wf-input wf-other-field"
+              type="text"
+              name="industry_other"
+              placeholder="Please specify your industry"
+              data-other-for="industry"
+              hidden
+            />
+          </div>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              How long has your business been operating?<span
+                class="wf-required"
+                >*</span
+              >
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_age"
+                value="Not launched yet"
+                required
+              />
+              Not launched yet</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_age"
+                value="Less than 1 year"
+              />
+              Less than 1 year</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="business_age" value="1–3 years" />
+              1&ndash;3 years</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="business_age" value="3–5 years" />
+              3&ndash;5 years</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="business_age" value="5+ years" /> 5+
+              years</label
+            >
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Which stage best describes your business right now?<span
+                class="wf-required"
+                >*</span
+              >
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Idea / pre-launch"
+                required
+              />
+              Idea / pre-launch</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Newly launched"
+              />
+              Newly launched</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Getting some clients"
+              />
+              Getting some clients</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Growing but inconsistent"
+              />
+              Growing but inconsistent</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Established and looking to scale"
+              />
+              Established and looking to scale</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="business_stage"
+                value="Repositioning / premiumising"
+              />
+              Repositioning / premiumising</label
+            >
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Are you the founder, owner, partner, or final decision-maker?<span
+                class="wf-required"
+                >*</span
+              >
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="decision_maker"
+                value="Yes, I am the final decision-maker"
+                required
+              />
+              Yes, I am the final decision-maker</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="decision_maker"
+                value="I influence the decision"
+              />
+              I influence the decision</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="decision_maker"
+                value="I need approval from someone else"
+              />
+              I need approval from someone else</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="decision_maker" value="No" /> No</label
+            >
+          </fieldset>
+
+          <fieldset
+            class="wf-field wf-checkbox-group"
+            data-max-select="2"
+            data-other-group="challenge"
+            required
+          >
+            <p class="wf-question">
+              What is your biggest current challenge?<span class="wf-required"
+                >*</span
+              >
+            </p>
+            <p class="wf-hint">Choose up to 2</p>
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="We are not getting enough qualified leads"
+              />
+              We are not getting enough qualified leads</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="People compare us mainly on price"
+              />
+              People compare us mainly on price</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="Our brand does not look as premium as our service/product"
+              />
+              Our brand does not look as premium as our service/product</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="Our website or social media does not convert"
+              />
+              Our website or social media does not convert</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="We depend too much on referrals"
+              />
+              We depend too much on referrals</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="Marketing spend is not giving enough return"
+              />
+              Marketing spend is not giving enough return</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="Our message sounds similar to competitors"
+              />
+              Our message sounds similar to competitors</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="We are launching a new business/product"
+              />
+              We are launching a new business/product</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="challenge[]"
+                value="We are trying to reposition or attract a better customer segment"
+              />
+              We are trying to reposition or attract a better customer
+              segment</label
+            >
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="challenge[]" value="Other" />
+              Other</label
+            >
+            <input
+              class="o-input wf-input wf-other-field"
+              type="text"
+              name="challenge_other"
+              placeholder="Please specify"
+              data-other-for="challenge"
+              hidden
+            />
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Based on today's session, which problem do you think your business
+              has most?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="core_problem"
+                value="Visibility problem — the right people don't know we exist"
+                required
+              />
+              Visibility problem &mdash; the right people don't know we
+              exist</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="core_problem"
+                value="Trust problem — people find us but don't fully believe us"
+              />
+              Trust problem &mdash; people find us but don't fully believe
+              us</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="core_problem"
+                value="Positioning problem — people don't understand why they should choose us"
+              />
+              Positioning problem &mdash; people don't understand why they
+              should choose us</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="core_problem"
+                value="Marketing execution problem — the strategy may be right, but campaigns/funnels are not converting"
+              />
+              Marketing execution problem &mdash; the strategy may be right, but
+              campaigns/funnels are not converting</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="core_problem"
+                value="I'm not sure yet"
+              />
+              I'm not sure yet</label
+            >
+          </fieldset>
+
+          <div class="wf-field">
+            <select class="o-select wf-input" name="diagnostic_score" required>
+              <option value="" disabled selected>
+                What was your total score on the Brand Building Diagnostic?*
+              </option>
+              <option value="24–30: Strong brand foundation">
+                24&ndash;30: Strong brand foundation
+              </option>
+              <option value="15–23: Positioning or trust gap">
+                15&ndash;23: Positioning or trust gap
+              </option>
+              <option
+                value="6–14: Significant visibility, trust, and positioning gaps"
+              >
+                6&ndash;14: Significant visibility, trust, and positioning gaps
+              </option>
+              <option value="I did not complete the diagnostic">
+                I did not complete the diagnostic
+              </option>
+            </select>
+          </div>
+
+          <fieldset
+            class="wf-field wf-checkbox-group"
+            data-other-group="lead_sources"
+            required
+          >
+            <p class="wf-question">
+              What are you currently using to get leads?<span
+                class="wf-required"
+                >*</span
+              >
+            </p>
+            <p class="wf-hint">Choose all that apply</p>
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="lead_sources[]" value="Referrals" />
+              Referrals</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Networking / business meet-ups"
+              />
+              Networking / business meet-ups</label
+            >
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="lead_sources[]" value="LinkedIn" />
+              LinkedIn</label
+            >
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="lead_sources[]" value="Instagram" />
+              Instagram</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="WhatsApp groups"
+              />
+              WhatsApp groups</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Google Ads"
+              />
+              Google Ads</label
+            >
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="lead_sources[]" value="Meta Ads" />
+              Meta Ads</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="SEO / website"
+              />
+              SEO / website</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Email marketing"
+              />
+              Email marketing</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Partnerships"
+              />
+              Partnerships</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Influencers"
+              />
+              Influencers</label
+            >
+            <label class="wf-checkbox-row"
+              ><input
+                type="checkbox"
+                name="lead_sources[]"
+                value="Cold outreach"
+              />
+              Cold outreach</label
+            >
+            <label class="wf-checkbox-row"
+              ><input type="checkbox" name="lead_sources[]" value="Other" />
+              Other</label
+            >
+            <input
+              class="o-input wf-input wf-other-field"
+              type="text"
+              name="lead_sources_other"
+              placeholder="Please specify"
+              data-other-for="lead_sources"
+              hidden
+            />
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Current monthly marketing / branding spend<span
+                class="wf-required"
+                >*</span
+              >
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="marketing_spend"
+                value="AED 0"
+                required
+              />
+              AED 0</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="marketing_spend" value="AED 1–2,500" />
+              AED 1&ndash;2,500</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="marketing_spend"
+                value="AED 2,500–5,000"
+              />
+              AED 2,500&ndash;5,000</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="marketing_spend"
+                value="AED 5,000–10,000"
+              />
+              AED 5,000&ndash;10,000</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="marketing_spend"
+                value="AED 10,000–25,000"
+              />
+              AED 10,000&ndash;25,000</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="marketing_spend" value="AED 25,000+" />
+              AED 25,000+</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="marketing_spend"
+                value="Prefer not to say"
+              />
+              Prefer not to say</label
+            >
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              Which statement best describes your current approach to
+              growth?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="growth_approach"
+                value="I mainly want fast, low-cost marketing execution such as more posts, templates, or quick campaigns"
+                required
+              />
+              I mainly want fast, low-cost marketing execution such as more
+              posts, templates, or quick campaigns</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="growth_approach"
+                value="I want to step back, fix our brand positioning, and build a more trusted business asset"
+              />
+              I want to step back, fix our brand positioning, and build a more
+              trusted business asset</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="growth_approach"
+                value="I am not sure yet, but I know our current approach is not working"
+              />
+              I am not sure yet, but I know our current approach is not
+              working</label
+            >
+          </fieldset>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              How soon are you looking to improve your brand, website, content,
+              or marketing?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="urgency"
+                value="Immediately"
+                required
+              />
+              Immediately</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="urgency" value="In the next 30 days" />
+              In the next 30 days</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="urgency" value="In the next 90 days" />
+              In the next 90 days</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="urgency" value="In 3–6 months" /> In
+              3&ndash;6 months</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="urgency"
+                value="Just exploring for now"
+              />
+              Just exploring for now</label
+            >
+          </fieldset>
+
+          <fieldset
+            class="wf-field wf-radio-group"
+            data-other-group="fix_priority"
+          >
+            <p class="wf-question">
+              What is the one thing you most want to fix in the next 90
+              days?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="More qualified leads"
+                required
+              />
+              More qualified leads</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Better positioning"
+              />
+              Better positioning</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="More premium perception"
+              />
+              More premium perception</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Better website conversion"
+              />
+              Better website conversion</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Stronger social media content direction"
+              />
+              Stronger social media content direction</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Stronger proposal / sales deck"
+              />
+              Stronger proposal / sales deck</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Better brand identity"
+              />
+              Better brand identity</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Clearer founder profile / LinkedIn presence"
+              />
+              Clearer founder profile / LinkedIn presence</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="fix_priority"
+                value="Launch or repositioning support"
+              />
+              Launch or repositioning support</label
+            >
+            <label class="wf-radio-row"
+              ><input type="radio" name="fix_priority" value="Other" />
+              Other</label
+            >
+            <input
+              class="o-input wf-input wf-other-field"
+              type="text"
+              name="fix_priority_other"
+              placeholder="Please specify"
+              data-other-for="fix_priority"
+              hidden
+            />
+          </fieldset>
+
+          <div class="wf-field">
+            <p class="wf-question">
+              Why does this matter now?<span class="wf-required">*</span>
+            </p>
+            <p class="wf-hint">
+              In 2&ndash;3 lines, tell me what is happening in the business that
+              makes this important now.
+            </p>
+            <textarea
+              class="o-textarea wf-input"
+              name="why_now"
+              required
+            ></textarea>
+          </div>
+
+          <fieldset class="wf-field wf-radio-group">
+            <p class="wf-question">
+              If the Brand Clarity Call identifies a clear growth opportunity,
+              are you open to investing in brand/marketing support in the next
+              90 days?<span class="wf-required">*</span>
+            </p>
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="invest_openness"
+                value="Yes, if the value is clear"
+                required
+              />
+              Yes, if the value is clear</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="invest_openness"
+                value="Maybe, depending on scope and cost"
+              />
+              Maybe, depending on scope and cost</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="invest_openness"
+                value="Not right now"
+              />
+              Not right now</label
+            >
+            <label class="wf-radio-row"
+              ><input
+                type="radio"
+                name="invest_openness"
+                value="I only want free advice at this stage"
+              />
+              I only want free advice at this stage</label
+            >
+          </fieldset>
+
+          <label class="wf-checkbox-row wf-field">
+            <input type="checkbox" name="consent" value="yes" required />
+            I agree that Arun / EDH may contact me by email or WhatsApp
+            regarding my Brand Clarity Call application and related brand-growth
+            resources.
+          </label>
+
+          <button type="submit" class="o-button wf-submit">
+            Apply for a Brand Clarity Call
+          </button>
+        </form>
+      </main>
+    </div>
+    <script src="/themes/homesociete/dist/scripts/webinar-form.js"></script>
+  </body>
+</html>
