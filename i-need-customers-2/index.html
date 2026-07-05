@@ -79,6 +79,7 @@
           method="POST"
           data-action="https://edgidesignhub.com/api/send-brand-clarity"
           data-thankyou="/thank-you-2"
+          data-recaptcha-sitekey="6LfU2kUtAAAAAHoj4_sACpgkzCEcZE3KW7-NEjRe"
         >
           <p class="wf-error" role="alert" hidden></p>
 
@@ -882,6 +883,13 @@
           <button type="submit" class="o-button wf-submit">
             Apply for a Brand Clarity Call
           </button>
+          <p class="wf-recaptcha-note">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>
+            and
+            <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a>
+            apply.
+          </p>
         </form>
 
         <div class="wf-panel_footer -show-mobile" style="flex-direction: row;">
@@ -922,6 +930,7 @@
         </div>
       </main>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfU2kUtAAAAAHoj4_sACpgkzCEcZE3KW7-NEjRe" async defer></script>
     <script src="/themes/homesociete/dist/scripts/webinar-form.js"></script>
   </body>
 </html>

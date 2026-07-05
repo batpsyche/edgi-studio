@@ -221,6 +221,24 @@ textarea.wf-input {
   cursor: default;
 }
 
+/* reCAPTCHA v3 runs invisibly; the floating badge is hidden per Google's
+   terms, which requires showing this attribution text instead. */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.wf-recaptcha-note {
+  font-size: 0.75rem;
+  color: var(--grey);
+  line-height: 1.4;
+  margin: 0.75rem 0 0;
+}
+
+.wf-recaptcha-note a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .wf-error {
   color: #c81616;
   font-size: 0.875rem;
