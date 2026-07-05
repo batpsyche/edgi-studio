@@ -93,35 +93,52 @@
       var submitButton = form.querySelector('button[type="submit"]');
       if (submitButton) submitButton.disabled = true;
 
-      var body = new URLSearchParams(new FormData(form));
+      function submitWithToken(token) {
+        var body = new URLSearchParams(new FormData(form));
+        if (token) body.set("g-recaptcha-response", token);
 
-      fetch(form.dataset.action, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body,
-      })
-        .then(function (response) {
-          return response.json().then(function (data) {
-            return { ok: response.ok, data: data };
+        fetch(form.dataset.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: body,
+        })
+          .then(function (response) {
+            return response.json().then(function (data) {
+              return { ok: response.ok, data: data };
+            });
+          })
+          .then(function (result) {
+            if (result.ok && result.data && result.data.success) {
+              window.location.href = form.dataset.thankyou;
+            } else {
+              throw new Error(
+                (result.data && result.data.error) || "Something went wrong"
+              );
+            }
+          })
+          .catch(function () {
+            if (errorEl) {
+              errorEl.hidden = false;
+              errorEl.textContent =
+                "Something went wrong submitting your application. Please try again in a moment.";
+            }
+            if (submitButton) submitButton.disabled = false;
           });
-        })
-        .then(function (result) {
-          if (result.ok && result.data && result.data.success) {
-            window.location.href = form.dataset.thankyou;
-          } else {
-            throw new Error(
-              (result.data && result.data.error) || "Something went wrong"
-            );
-          }
-        })
-        .catch(function () {
-          if (errorEl) {
-            errorEl.hidden = false;
-            errorEl.textContent =
-              "Something went wrong submitting your application. Please try again in a moment.";
-          }
-          if (submitButton) submitButton.disabled = false;
+      }
+
+      var siteKey = form.dataset.recaptchaSitekey;
+      if (siteKey && window.grecaptcha) {
+        grecaptcha.ready(function () {
+          grecaptcha
+            .execute(siteKey, { action: "webinar_form_submit" })
+            .then(submitWithToken)
+            .catch(function () {
+              submitWithToken(null);
+            });
         });
+      } else {
+        submitWithToken(null);
+      }
     });
   }
 
